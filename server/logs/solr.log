@@ -1,62 +1,133 @@
-2018-12-21 11:24:31.554 INFO  (main) [   ] o.e.j.u.log Logging initialized @840ms to org.eclipse.jetty.util.log.Slf4jLog
-2018-12-21 11:24:31.688 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
-2018-12-21 11:24:31.720 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/saidb/Documents/SolrSearchEngine/server/contexts/] at interval 0
-2018-12-21 11:24:32.160 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2018-12-21 11:24:32.168 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2018-12-21 11:24:32.168 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2018-12-21 11:24:32.170 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2018-12-21 11:24:32.214 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
-2018-12-21 11:24:32.238 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2018-12-21 11:24:32.241 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
-2018-12-21 11:24:32.241 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2018-12-21 11:24:32.241 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\saidb\Documents\SolrSearchEngine
-2018-12-21 11:24:32.242 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-12-21T11:24:32.242Z
-2018-12-21 11:24:32.261 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\saidb\Documents\SolrSearchEngine\server\solr
-2018-12-21 11:24:32.267 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\saidb\Documents\SolrSearchEngine\server\solr\solr.xml
-2018-12-21 11:24:32.313 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21, but no JMX reporters were configured - adding default JMX reporter.
-2018-12-21 11:24:33.415 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2018-12-21 11:24:33.417 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2018-12-21 11:24:33.481 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2018-12-21 11:24:33.482 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2018-12-21 11:24:33.488 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2018-12-21 11:24:33.547 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\saidb\Documents\SolrSearchEngine\server\solr
-2018-12-21 11:24:33.548 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [core_blog]
-2018-12-21 11:24:33.594 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrResourceLoader [core_blog] Added 59 libs to classloader, from paths: [/C:/Users/saidb/Documents/SolrSearchEngine/contrib/clustering/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/dataimporthandler/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/extraction/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/langid/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/velocity/lib, /C:/Users/saidb/Documents/SolrSearchEngine/dist]
-2018-12-21 11:24:33.744 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
-2018-12-21 11:24:33.874 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema [core_blog] Schema name=default-config
-2018-12-21 11:24:33.938 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e50c791{/solr,file:///C:/Users/saidb/Documents/SolrSearchEngine/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
-2018-12-21 11:24:33.952 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2018-12-21 11:24:33.952 INFO  (main) [   ] o.e.j.s.Server Started @3240ms
-2018-12-21 11:24:34.145 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=56
-2018-12-21 11:24:34.318 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2018-12-21 11:24:34.347 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.CoreContainer Creating SolrCore 'core_blog' using configuration from instancedir C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog, trusted=true
-2018-12-21 11:24:34.357 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.core_blog' (registry 'solr.core.core_blog') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2018-12-21 11:24:34.370 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrCore [[core_blog] ] Opening new SolrCore at [C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog], dataDir=[C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\data\]
-2018-12-21 11:24:34.409 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2018-12-21 11:24:34.787 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2018-12-21 11:24:34.787 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2018-12-21 11:24:34.797 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2018-12-21 11:24:34.797 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2018-12-21 11:24:34.862 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.SolrIndexSearcher Opening [Searcher@5c08f663[core_blog] main]
-2018-12-21 11:24:34.873 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\conf
-2018-12-21 11:24:34.889 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2018-12-21 11:24:34.894 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2018-12-21 11:24:34.903 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2018-12-21 11:24:34.917 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5c08f663[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2018-12-21 11:24:34.918 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2018-12-21 11:24:34.918 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2018-12-21 11:24:34.920 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1620460411205713920
-2018-12-21 11:24:34.922 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@5c08f663[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2018-12-21 11:32:41.297 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2018-12-21 11:32:41.297 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2018-12-21 11:32:41.299 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1834361038
-2018-12-21 11:32:41.301 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2018-12-21 11:32:41.301 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1dd6d4b7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@3d0bc87b
-2018-12-21 11:32:41.307 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2018-12-21 11:32:41.307 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3401a114: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@4f9dbdaf
-2018-12-21 11:32:41.309 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2018-12-21 11:32:41.310 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5066d65f: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@179a1fb6
-2018-12-21 11:32:41.312 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.c.SolrCore [core_blog]  CLOSING SolrCore org.apache.solr.core.SolrCore@4a5bd067
-2018-12-21 11:32:41.312 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.core_blog, tag=4a5bd067
-2018-12-21 11:32:41.312 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@667d9e78: rootName = null, domain = solr.core.core_blog, service url = null, agent id = null] for registry solr.core.core_blog / com.codahale.metrics.MetricRegistry@1df44793
-2018-12-21 11:32:41.331 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4e50c791{/solr,null,UNAVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
+2018-12-21 12:07:04.516 INFO  (main) [   ] o.e.j.u.log Logging initialized @811ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-12-21 12:07:04.656 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
+2018-12-21 12:07:04.687 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/saidb/Documents/SolrSearchEngine/server/contexts/] at interval 0
+2018-12-21 12:07:05.109 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2018-12-21 12:07:05.125 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2018-12-21 12:07:05.141 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2018-12-21 12:07:05.141 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2018-12-21 12:07:05.187 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2018-12-21 12:07:05.203 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2018-12-21 12:07:05.203 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
+2018-12-21 12:07:05.203 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-12-21 12:07:05.203 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\saidb\Documents\SolrSearchEngine
+2018-12-21 12:07:05.203 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-12-21T12:07:05.203Z
+2018-12-21 12:07:05.219 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\saidb\Documents\SolrSearchEngine\server\solr
+2018-12-21 12:07:05.234 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\saidb\Documents\SolrSearchEngine\server\solr\solr.xml
+2018-12-21 12:07:05.265 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21, but no JMX reporters were configured - adding default JMX reporter.
+2018-12-21 12:07:06.451 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-12-21 12:07:06.453 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2018-12-21 12:07:06.520 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2018-12-21 12:07:06.520 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2018-12-21 12:07:06.525 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2018-12-21 12:07:06.567 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\saidb\Documents\SolrSearchEngine\server\solr
+2018-12-21 12:07:06.568 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [core_blog]
+2018-12-21 12:07:06.611 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrResourceLoader [core_blog] Added 59 libs to classloader, from paths: [/C:/Users/saidb/Documents/SolrSearchEngine/contrib/clustering/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/dataimporthandler/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/extraction/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/langid/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/velocity/lib, /C:/Users/saidb/Documents/SolrSearchEngine/dist]
+2018-12-21 12:07:06.796 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2018-12-21 12:07:06.932 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema [core_blog] Schema name=default-config
+2018-12-21 12:07:06.960 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e50c791{/solr,file:///C:/Users/saidb/Documents/SolrSearchEngine/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
+2018-12-21 12:07:06.975 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2018-12-21 12:07:06.975 INFO  (main) [   ] o.e.j.s.Server Started @3265ms
+2018-12-21 12:07:07.113 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=73
+2018-12-21 12:07:07.399 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-12-21 12:07:07.435 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.CoreContainer Creating SolrCore 'core_blog' using configuration from instancedir C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog, trusted=true
+2018-12-21 12:07:07.444 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.core_blog' (registry 'solr.core.core_blog') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2018-12-21 12:07:07.459 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrCore [[core_blog] ] Opening new SolrCore at [C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog], dataDir=[C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\data\]
+2018-12-21 12:07:07.504 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-12-21 12:07:07.952 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-12-21 12:07:07.952 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-12-21 12:07:07.961 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2018-12-21 12:07:07.961 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-12-21 12:07:08.025 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.SolrIndexSearcher Opening [Searcher@3897d63e[core_blog] main]
+2018-12-21 12:07:08.038 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\conf
+2018-12-21 12:07:08.055 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-12-21 12:07:08.060 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-12-21 12:07:08.071 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-12-21 12:07:08.089 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3897d63e[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-21 12:07:08.090 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-21 12:07:08.090 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-12-21 12:07:08.094 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1620463088402694144
+2018-12-21 12:07:08.097 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@3897d63e[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2018-12-21 12:07:09.040 INFO  (qtp1571967156-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1545394028868} status=0 QTime=1
+2018-12-21 12:07:09.045 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1545394029023} status=0 QTime=2
+2018-12-21 12:07:09.051 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1545394029023} status=0 QTime=7
+2018-12-21 12:07:09.070 INFO  (qtp1571967156-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1545394028868} status=0 QTime=29
+2018-12-21 12:07:09.074 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1545394029023} status=0 QTime=0
+2018-12-21 12:07:23.129 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2018-12-21 12:07:23.166 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2018-12-21 12:07:23.189 INFO  (Thread-14) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2018-12-21 12:07:23.189 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1545394029023&verbose=false} status=0 QTime=66
+2018-12-21 12:07:23.199 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1545394029023} status=0 QTime=0
+2018-12-21 12:07:23.221 WARN  (Thread-14) [   ] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2018-12-21 12:07:23.620 INFO  (Thread-14) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2018-12-21 12:07:23.947 INFO  (Thread-14) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 330
+2018-12-21 12:07:24.077 INFO  (Thread-14) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2018-12-21 12:07:24.077 INFO  (Thread-14) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1620463105162084353,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-21 12:07:24.077 INFO  (Thread-14) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@5ee3038e commitCommandVersion:1620463105162084353
+2018-12-21 12:07:24.544 INFO  (Thread-14) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@8fd0ae5[core_blog] main]
+2018-12-21 12:07:24.544 INFO  (Thread-14) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-21 12:07:24.544 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@8fd0ae5[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C14)))}
+2018-12-21 12:07:24.544 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-21 12:07:24.544 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@8fd0ae5[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.5.0):C14)))}
+2018-12-21 12:07:24.544 WARN  (Thread-14) [   ] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2018-12-21 12:07:24.544 INFO  (Thread-14) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2018-12-21 12:07:24.544 INFO  (Thread-14) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:1.335
+2018-12-21 12:07:24.544 INFO  (Thread-14) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1545394029023&verbose=false} status=0 QTime=66{deleteByQuery=*:* (-1620463104337903616),add=[2 (1620463105042546688), 3 (1620463105152647168), 4 (1620463105153695744), 5 (1620463105154744320), 6 (1620463105155792896), 7 (1620463105156841472), 8 (1620463105157890048), 9 (1620463105157890049), 10 (1620463105158938624), 11 (1620463105158938625), ... (14 adds)],commit=} 0 1430
+2018-12-21 12:07:41.833 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2018-12-21 12:07:41.835 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2018-12-21 12:07:41.836 INFO  (Thread-15) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2018-12-21 12:07:41.836 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=blog_pro&_=1545394029023&verbose=false} status=0 QTime=3
+2018-12-21 12:07:41.842 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2018-12-21 12:07:41.842 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1545394029023} status=0 QTime=0
+2018-12-21 12:07:41.932 INFO  (Thread-15) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@113715fd[core_blog] realtime]
+2018-12-21 12:07:41.932 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2018-12-21 12:07:41.932 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2018-12-21 12:07:41.948 INFO  (Thread-15) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2018-12-21 12:07:41.948 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1620463123901186059,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-21 12:07:41.948 INFO  (Thread-15) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@5ee3038e commitCommandVersion:1620463123901186059
+2018-12-21 12:07:42.229 INFO  (Thread-15) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@dea84d5[core_blog] main]
+2018-12-21 12:07:42.229 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@dea84d5[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.5.0):C14)))}
+2018-12-21 12:07:42.229 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-21 12:07:42.229 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@dea84d5[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(7.5.0):C14)))}
+2018-12-21 12:07:42.244 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-21 12:07:42.244 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2018-12-21 12:07:42.244 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2018-12-21 12:07:42.260 INFO  (Thread-15) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.421
+2018-12-21 12:07:42.260 INFO  (Thread-15) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=blog_pro&_=1545394029023&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1620463123790036992),add=[2 (1620463123884408832), 3 (1620463123884408833), 4 (1620463123884408834), 5 (1620463123901186048), 6 (1620463123901186049), 7 (1620463123901186050), 8 (1620463123901186051), 9 (1620463123901186052), 10 (1620463123901186053), 11 (1620463123901186054), ... (14 adds)],commit=} 0 431
+2018-12-21 12:07:48.335 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2018-12-21 12:07:48.337 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2018-12-21 12:07:48.337 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=blog_pro&_=1545394029023&verbose=false} status=0 QTime=3
+2018-12-21 12:07:48.337 INFO  (Thread-16) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2018-12-21 12:07:48.346 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1545394029023} status=0 QTime=0
+2018-12-21 12:07:48.350 INFO  (Thread-16) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2018-12-21 12:07:48.355 INFO  (Thread-16) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@12003ce2[core_blog] realtime]
+2018-12-21 12:07:48.361 INFO  (Thread-16) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2018-12-21 12:07:48.368 INFO  (Thread-16) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 7
+2018-12-21 12:07:48.378 INFO  (Thread-16) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2018-12-21 12:07:48.378 INFO  (Thread-16) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1620463130643529729,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2018-12-21 12:07:48.378 INFO  (Thread-16) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@5ee3038e commitCommandVersion:1620463130643529729
+2018-12-21 12:07:48.850 INFO  (Thread-16) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@45bcff0e[core_blog] main]
+2018-12-21 12:07:48.850 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@45bcff0e[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
+2018-12-21 12:07:48.850 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-12-21 12:07:48.850 INFO  (Thread-16) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2018-12-21 12:07:48.850 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@45bcff0e[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
+2018-12-21 12:07:48.850 INFO  (Thread-16) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2018-12-21 12:07:48.850 INFO  (Thread-16) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2018-12-21 12:07:48.865 INFO  (Thread-16) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.516
+2018-12-21 12:07:48.865 INFO  (Thread-16) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=blog_pro&_=1545394029023&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1620463130614169600),add=[2 (1620463130635141120), 3 (1620463130637238272), 4 (1620463130637238273), 5 (1620463130638286848), 6 (1620463130639335424), 7 (1620463130639335425), 8 (1620463130640384000), 9 (1620463130640384001), 10 (1620463130640384002), 11 (1620463130641432576), ... (14 adds)],commit=} 0 533
+2018-12-21 12:07:54.241 INFO  (qtp1571967156-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1545394028868} status=0 QTime=0
+2018-12-21 12:07:54.271 INFO  (qtp1571967156-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1545394028868} status=0 QTime=29
+2018-12-21 12:07:56.430 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&_=1545394074191} hits=14 status=0 QTime=131
+2018-12-21 12:08:05.769 INFO  (qtp1571967156-19) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=yoga&_=1545394074191} hits=0 status=0 QTime=5
+2018-12-21 13:21:18.485 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2018-12-21 13:21:18.485 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2018-12-21 13:21:18.487 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1834361038
+2018-12-21 13:21:18.488 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-12-21 13:21:18.489 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1dd6d4b7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@3d0bc87b
+2018-12-21 13:21:18.492 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-12-21 13:21:18.492 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3401a114: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@13161115
+2018-12-21 13:21:18.493 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-12-21 13:21:18.494 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5066d65f: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@1f27a809
+2018-12-21 13:21:18.495 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.c.SolrCore [core_blog]  CLOSING SolrCore org.apache.solr.core.SolrCore@24e13d4e
+2018-12-21 13:21:18.495 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.core_blog, tag=24e13d4e
+2018-12-21 13:21:18.495 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5a854fa0: rootName = null, domain = solr.core.core_blog, service url = null, agent id = null] for registry solr.core.core_blog / com.codahale.metrics.MetricRegistry@705e4294
+2018-12-21 13:21:18.512 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4e50c791{/solr,null,UNAVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
