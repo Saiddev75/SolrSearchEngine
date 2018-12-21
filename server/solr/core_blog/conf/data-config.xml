@@ -1,0 +1,13 @@
+<dataConfig>
+<dataSource  type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/blog" user="root" password="" />
+    <document >
+      <entity name="blog_pro"  pk="blog_proid" query="SELECT * from blog_pro">
+          
+         <field column="blog_proid" name="id"/>
+         <field column="prenom" name="prenom"/>     
+         <field column="nom" name="nom"/>  
+       
+      </entity>
+                                 
+    </document>
+</dataConfig>
