@@ -1371,4 +1371,26 @@
       EditorialMarkerFactory will do exactly that:
      <transformer name="qecBooster" class="org.apache.solr.response.transform.EditorialMarkerFactory" />
     -->
+    <searchComponent name="suggest" class="solr.SuggestComponent">
+          <lst name="suggester">
+                <str name="name">mySuggester</str>
+                <str name="lookupImpl">FuzzyLookupFactory</str>
+                <str name="dictionaryImpl">DocumentDictionaryFactory</str>
+                <str name="field">prenom</str>
+                <str name="nomField">nom</str>
+                <str name="suggestAnalyzerFieldType">string</str>
+                <str name="buildOnStartup">false</str>
+          </lst>
+          <lst name="suggester">
+                <str name="name">altSuggester</str>
+                <str name="dictionaryImpl">DocumentExpressionDictionaryFactory</str>
+                <str name="lookupImpl">FuzzyLookupFactory</str>
+                <str name="field">bis_prenom</str>
+                <str name="nomExpression">bis_nom</str>
+                <str name="sortField">prenom</str>
+                <str name="sortField">nom</str>
+                <str name="storeDir">suggest_fuzzy_doc_expr_dict</str>
+                <str name="suggestAnalyzerFieldType">text_fr</str>
+          </lst>
+    </searchComponent>
 </config>
