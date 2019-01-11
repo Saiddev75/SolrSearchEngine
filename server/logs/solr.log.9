@@ -1,81 +1,1027 @@
-2019-01-09 09:11:34.001 INFO  (main) [   ] o.e.j.u.log Logging initialized @862ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-01-09 09:11:34.142 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
-2019-01-09 09:11:34.173 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/saidb/Documents/SolrSearchEngine/server/contexts/] at interval 0
-2019-01-09 09:11:34.595 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-01-09 09:11:34.611 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-01-09 09:11:34.611 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-01-09 09:11:34.611 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2019-01-09 09:11:34.642 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
-2019-01-09 09:11:34.673 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-01-09 09:11:34.673 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
-2019-01-09 09:11:34.673 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-01-09 09:11:34.673 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\saidb\Documents\SolrSearchEngine
-2019-01-09 09:11:34.673 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-01-09T09:11:34.673Z
-2019-01-09 09:11:34.689 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\saidb\Documents\SolrSearchEngine\server\solr
-2019-01-09 09:11:34.704 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\saidb\Documents\SolrSearchEngine\server\solr\solr.xml
-2019-01-09 09:11:34.736 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21, but no JMX reporters were configured - adding default JMX reporter.
-2019-01-09 09:11:40.018 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-01-09 09:11:40.022 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-01-09 09:11:40.078 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-09 09:11:40.078 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-09 09:11:40.078 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-09 09:11:40.123 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\saidb\Documents\SolrSearchEngine\server\solr
-2019-01-09 09:11:40.123 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [core_blog]
-2019-01-09 09:11:40.171 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrResourceLoader [core_blog] Added 59 libs to classloader, from paths: [/C:/Users/saidb/Documents/SolrSearchEngine/contrib/clustering/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/dataimporthandler/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/extraction/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/langid/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/velocity/lib, /C:/Users/saidb/Documents/SolrSearchEngine/dist]
-2019-01-09 09:11:40.324 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
-2019-01-09 09:11:40.434 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema [core_blog] Schema name=default-config
-2019-01-09 09:11:40.510 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e50c791{/solr,file:///C:/Users/saidb/Documents/SolrSearchEngine/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
-2019-01-09 09:11:40.554 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-01-09 09:11:40.563 INFO  (main) [   ] o.e.j.s.Server Started @7419ms
-2019-01-09 09:11:40.828 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-01-09 09:11:40.860 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.CoreContainer Creating SolrCore 'core_blog' using configuration from instancedir C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog, trusted=true
-2019-01-09 09:11:40.875 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.core_blog' (registry 'solr.core.core_blog') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-09 09:11:40.891 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrCore [[core_blog] ] Opening new SolrCore at [C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog], dataDir=[C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\data\]
-2019-01-09 09:11:40.938 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-01-09 09:11:41.178 INFO  (qtp1571967156-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1547025019688&since=0} status=0 QTime=5
-2019-01-09 09:11:41.512 INFO  (qtp1571967156-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=28
-2019-01-09 09:11:43.917 INFO  (qtp1571967156-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547025103784} status=0 QTime=3
-2019-01-09 09:11:43.917 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1547025103907&since=0} status=0 QTime=0
-2019-01-09 09:11:43.949 INFO  (qtp1571967156-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547025103784} status=0 QTime=31
-2019-01-09 09:11:45.884 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-01-09 09:11:45.884 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-01-09 09:11:45.900 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-01-09 09:11:45.900 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-01-09 09:11:45.992 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.SolrIndexSearcher Opening [Searcher@1592cfd5[core_blog] main]
-2019-01-09 09:11:45.996 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\conf
-2019-01-09 09:11:46.011 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-01-09 09:11:46.011 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-01-09 09:11:46.011 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2019-01-09 09:11:46.043 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=commentaire,prenomField=prenom,nomField=nom,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2019-01-09 09:11:46.095 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=commentaire,prenomField=prenom,nomField=nom,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2019-01-09 09:11:46.099 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-01-09 09:11:46.107 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1592cfd5[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
-2019-01-09 09:11:46.107 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-01-09 09:11:46.107 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-01-09 09:11:46.111 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@1592cfd5[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
-2019-01-09 09:11:47.362 INFO  (qtp1571967156-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547025103784} status=0 QTime=0
-2019-01-09 09:11:47.366 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1547025107354} status=0 QTime=4
-2019-01-09 09:11:47.370 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1547025103784&ts=1547025103784} status=503 QTime=3
-2019-01-09 09:11:47.370 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547025107354} status=0 QTime=8
-2019-01-09 09:11:47.418 INFO  (qtp1571967156-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547025103784} status=0 QTime=57
-2019-01-09 09:11:47.418 INFO  (qtp1571967156-19) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/system params={wt=json&_=1547025107354} status=0 QTime=51
-2019-01-09 09:11:50.096 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547025103784} status=0 QTime=0
-2019-01-09 09:11:50.124 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547025103784} status=0 QTime=28
-2019-01-09 09:11:59.817 INFO  (qtp1571967156-19) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=hugo&_=1547025110068} hits=0 status=0 QTime=32
-2019-01-09 09:12:51.550 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=hugo&_=1547025110068} hits=0 status=0 QTime=0
-2019-01-09 09:12:52.471 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=hugo&_=1547025110068} hits=0 status=0 QTime=0
-2019-01-09 09:12:53.127 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=hugo&_=1547025110068} hits=0 status=0 QTime=0
-2019-01-09 09:12:53.893 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=hugo&_=1547025110068} hits=0 status=0 QTime=0
-2019-01-09 09:18:31.268 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-01-09 09:18:31.268 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-01-09 09:18:31.268 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1834361038
-2019-01-09 09:18:31.272 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-01-09 09:18:31.272 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1dd6d4b7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@6c786fa7
-2019-01-09 09:18:31.276 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-01-09 09:18:31.276 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3401a114: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@3b5c8d29
-2019-01-09 09:18:31.280 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-01-09 09:18:31.280 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5066d65f: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@5a5ce997
-2019-01-09 09:18:31.280 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.c.SolrCore [core_blog]  CLOSING SolrCore org.apache.solr.core.SolrCore@191be949
-2019-01-09 09:18:31.280 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.core_blog, tag=191be949
-2019-01-09 09:18:31.280 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4864968a: rootName = null, domain = solr.core.core_blog, service url = null, agent id = null] for registry solr.core.core_blog / com.codahale.metrics.MetricRegistry@490e0c9d
-2019-01-09 09:18:31.312 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4e50c791{/solr,null,UNAVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
+2019-01-10 10:44:32.741 INFO  (main) [   ] o.e.j.u.log Logging initialized @920ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-10 10:44:32.891 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
+2019-01-10 10:44:32.918 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/saidb/Documents/SolrSearchEngine/server/contexts/] at interval 0
+2019-01-10 10:44:33.381 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-01-10 10:44:33.389 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-01-10 10:44:33.390 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-01-10 10:44:33.391 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-01-10 10:44:33.437 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-01-10 10:44:33.461 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-01-10 10:44:33.465 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
+2019-01-10 10:44:33.466 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-01-10 10:44:33.466 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\saidb\Documents\SolrSearchEngine
+2019-01-10 10:44:33.467 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-01-10T10:44:33.466Z
+2019-01-10 10:44:33.488 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\saidb\Documents\SolrSearchEngine\server\solr
+2019-01-10 10:44:33.493 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\saidb\Documents\SolrSearchEngine\server\solr\solr.xml
+2019-01-10 10:44:33.539 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21, but no JMX reporters were configured - adding default JMX reporter.
+2019-01-10 10:44:38.863 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-01-10 10:44:38.879 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-01-10 10:44:38.926 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 10:44:38.926 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 10:44:38.926 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 10:44:38.973 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\saidb\Documents\SolrSearchEngine\server\solr
+2019-01-10 10:44:38.973 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [core_blog]
+2019-01-10 10:44:39.025 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrResourceLoader [core_blog] Added 59 libs to classloader, from paths: [/C:/Users/saidb/Documents/SolrSearchEngine/contrib/clustering/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/dataimporthandler/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/extraction/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/langid/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/velocity/lib, /C:/Users/saidb/Documents/SolrSearchEngine/dist]
+2019-01-10 10:44:39.212 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2019-01-10 10:44:39.322 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema [core_blog] Schema name=default-config
+2019-01-10 10:44:39.384 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e50c791{/solr,file:///C:/Users/saidb/Documents/SolrSearchEngine/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
+2019-01-10 10:44:39.400 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-01-10 10:44:39.400 INFO  (main) [   ] o.e.j.s.Server Started @7595ms
+2019-01-10 10:44:39.697 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-01-10 10:44:39.728 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.CoreContainer Creating SolrCore 'core_blog' using configuration from instancedir C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog, trusted=true
+2019-01-10 10:44:39.759 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.core_blog' (registry 'solr.core.core_blog') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 10:44:39.759 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrCore [[core_blog] ] Opening new SolrCore at [C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog], dataDir=[C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\data\]
+2019-01-10 10:44:39.806 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-01-10 10:44:40.243 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=30
+2019-01-10 10:44:44.698 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-01-10 10:44:44.698 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-01-10 10:44:44.717 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-01-10 10:44:44.717 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-01-10 10:44:44.802 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.SolrIndexSearcher Opening [Searcher@4417acea[core_blog] main]
+2019-01-10 10:44:44.810 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\conf
+2019-01-10 10:44:44.825 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-01-10 10:44:44.830 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-01-10 10:44:44.836 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2019-01-10 10:44:44.839 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=prenom,suggestAnalyzerFieldType=text_general,buildOnStartup=false}
+2019-01-10 10:44:44.849 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=prenom,suggestAnalyzerFieldType=text_general,buildOnStartup=false}
+2019-01-10 10:44:44.853 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-01-10 10:44:44.857 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4417acea[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
+2019-01-10 10:44:44.857 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 10:44:44.857 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-01-10 10:44:44.863 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@4417acea[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
+2019-01-10 10:44:44.895 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=CUSTOM:+#core_name&wt=velocity} hits=14 status=0 QTime=3079
+2019-01-10 10:44:44.895 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.PluginBag Going to create a new queryResponseWriter with {type = queryResponseWriter,name = velocity,class = solr.VelocityResponseWriter,attributes = {startup=lazy, name=velocity, class=solr.VelocityResponseWriter},args = {template.base.dir=,solr.resource.loader.enabled=true,params.resource.loader.enabled=false}} 
+2019-01-10 10:44:44.999 ERROR (qtp1571967156-18) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:45.001 ERROR (qtp1571967156-18) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:45.011 ERROR (qtp1571967156-18) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:45.011 ERROR (qtp1571967156-18) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:45.958 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=CUSTOM:+#core_name&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:44:45.972 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:45.972 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:45.982 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:45.982 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:47.196 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=CUSTOM:+#core_name&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:44:47.206 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:47.206 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:47.217 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:47.217 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:47.800 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=CUSTOM:+#core_name&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:44:47.808 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:47.808 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:47.818 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:47.820 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:48.304 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=CUSTOM:+#core_name&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:44:48.312 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:48.313 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:48.323 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:48.323 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:50.352 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=CUSTOM:+#core_name&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:44:50.359 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:50.360 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:44:50.371 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:44:50.371 ERROR (qtp1571967156-24) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:45:43.548 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=CUSTOM:+#core_blog&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:45:43.561 ERROR (qtp1571967156-23) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:45:43.562 ERROR (qtp1571967156-23) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:45:43.569 ERROR (qtp1571967156-23) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:45:43.569 ERROR (qtp1571967156-23) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:46:10.140 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=core_blog&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:46:10.151 ERROR (qtp1571967156-16) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:46:10.152 ERROR (qtp1571967156-16) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:46:10.162 ERROR (qtp1571967156-16) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:46:10.162 ERROR (qtp1571967156-16) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:46:15.656 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=\*:*&v.template=custom&v.template.custom=CUSTOM:+#core_blog&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:46:15.663 ERROR (qtp1571967156-22) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:46:15.664 ERROR (qtp1571967156-22) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:46:15.674 ERROR (qtp1571967156-22) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource 'custom.vm' in any resource loader.
+2019-01-10 10:46:15.674 ERROR (qtp1571967156-22) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource 'custom.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:50:10.993 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={q=} hits=14 status=0 QTime=301
+2019-01-10 10:51:07.653 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={q=je} hits=0 status=0 QTime=128
+2019-01-10 10:51:18.259 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={q=ry} hits=0 status=0 QTime=0
+2019-01-10 10:51:23.312 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={q=} hits=14 status=0 QTime=0
+2019-01-10 10:53:38.871 INFO  (qtp1571967156-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547117618648} status=0 QTime=1
+2019-01-10 10:53:38.904 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547117618650} status=0 QTime=33
+2019-01-10 10:53:38.937 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547117618650} status=0 QTime=29
+2019-01-10 10:53:44.179 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547117618648} status=0 QTime=0
+2019-01-10 10:53:44.185 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1547117624171} status=0 QTime=3
+2019-01-10 10:53:44.189 INFO  (qtp1571967156-19) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547117624172} status=0 QTime=4
+2019-01-10 10:53:44.189 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1547117618650&ts=1547117618650} status=503 QTime=1
+2019-01-10 10:53:44.244 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/system params={wt=json&_=1547117624171} status=0 QTime=56
+2019-01-10 10:53:44.244 INFO  (qtp1571967156-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547117618650} status=0 QTime=64
+2019-01-10 10:53:46.825 INFO  (qtp1571967156-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547117618648} status=0 QTime=0
+2019-01-10 10:53:46.853 INFO  (qtp1571967156-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547117618650} status=0 QTime=27
+2019-01-10 10:53:58.111 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&_=1547117626784} hits=14 status=0 QTime=0
+2019-01-10 10:54:02.962 INFO  (qtp1571967156-21) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&wt=json&_=1547117626784} hits=14 status=0 QTime=0
+2019-01-10 10:54:12.537 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&wt=json} hits=14 status=0 QTime=0
+2019-01-10 10:54:18.538 INFO  (qtp1571967156-21) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&wt=velocity} hits=14 status=0 QTime=0
+2019-01-10 10:54:18.549 ERROR (qtp1571967156-21) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource '/select.vm' in any resource loader.
+2019-01-10 10:54:18.550 ERROR (qtp1571967156-21) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource '/select.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:54:18.558 ERROR (qtp1571967156-21) [   x:core_blog] o.a.s.r.VelocityResponseWriter ResourceManager : unable to find resource '/select.vm' in any resource loader.
+2019-01-10 10:54:18.559 ERROR (qtp1571967156-21) [   x:core_blog] o.a.s.s.HttpSolrCall null:java.io.IOException: Unable to find resource '/select.vm'
+	at org.apache.solr.response.VelocityResponseWriter.getTemplate(VelocityResponseWriter.java:368)
+	at org.apache.solr.response.VelocityResponseWriter.write(VelocityResponseWriter.java:156)
+	at org.apache.solr.response.QueryResponseWriterUtil.writeQueryResponse(QueryResponseWriterUtil.java:65)
+	at org.apache.solr.servlet.HttpSolrCall.writeResponse(HttpSolrCall.java:787)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:524)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:54:53.206 ERROR (qtp1571967156-21) [   x:core_blog] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "tags"
+	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1225)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
+	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:427)
+	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:826)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:765)
+	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:841)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:329)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:273)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-01-10 10:54:53.206 INFO  (qtp1571967156-21) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={facet.field=tags} hits=14 status=400 QTime=3
+2019-01-10 10:54:53.219 ERROR (qtp1571967156-21) [   x:core_blog] o.a.s.r.VelocityResponseWriter Left side ($response.facetFields.size()) of '>' operation has null value at facets.vm[line 6, column 35]
+2019-01-10 10:55:01.100 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={} hits=14 status=0 QTime=0
+2019-01-10 10:55:31.975 INFO  (qtp1571967156-21) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={q=hugo+} hits=0 status=0 QTime=0
+2019-01-10 11:04:35.326 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-01-10 11:04:35.326 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-01-10 11:04:35.329 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1834361038
+2019-01-10 11:04:35.330 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-01-10 11:04:35.331 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1dd6d4b7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@3d0bc87b
+2019-01-10 11:04:35.335 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-01-10 11:04:35.336 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3401a114: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@4f9dbdaf
+2019-01-10 11:04:35.337 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-01-10 11:04:35.337 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5066d65f: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@179a1fb6
+2019-01-10 11:04:35.339 INFO  (coreCloseExecutor-16-thread-1) [   x:core_blog] o.a.s.c.SolrCore [core_blog]  CLOSING SolrCore org.apache.solr.core.SolrCore@7034ca6b
+2019-01-10 11:04:35.339 INFO  (coreCloseExecutor-16-thread-1) [   x:core_blog] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.core_blog, tag=7034ca6b
+2019-01-10 11:04:35.340 INFO  (coreCloseExecutor-16-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@78433de8: rootName = null, domain = solr.core.core_blog, service url = null, agent id = null] for registry solr.core.core_blog / com.codahale.metrics.MetricRegistry@4933a8bc
+2019-01-10 11:04:35.366 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4e50c791{/solr,null,UNAVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}

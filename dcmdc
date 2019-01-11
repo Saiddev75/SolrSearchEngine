@@ -1,0 +1,59 @@
+[33mcommit fe1aa686fc91ec8b7f1d92dcd5eb6f3226b6603b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Fri Dec 21 14:22:54 2018 +0100
+
+    Debug du fichier data-config.xml et indexation (full-import) de la bdd
+
+[33mcommit f68df8fea13f77e112b243085c26cc1bd0fe4fa5[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Fri Dec 21 12:37:43 2018 +0100
+
+    Création du fichier data-config.xml qui sera appelé par le requestHandler du solrconfig.xml
+
+[33mcommit a1b073a615fc436013e711636e50391b6266d4fc[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Fri Dec 21 12:24:04 2018 +0100
+
+    Ajout du requestHandler dans le fichier solrconfig.xml
+
+[33mcommit cc2b5f7d62906b4679a1814873c7dcf61822eb2d[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Fri Dec 21 12:17:09 2018 +0100
+
+    Modification du code de solrconfig.xml ajout de code nécessaire a la connexion avec le driver MySQL
+
+[33mcommit 61f09dd4d77505a7e61b8996a3c299ef1c64a73d[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Fri Dec 21 12:05:59 2018 +0100
+
+    Création du dossier lib (chemin : contrib/dataimporthandler/) Ajout du DRIVER MySQL necéssaire a la connexion avec la bdd dans le dossier lib
+
+[33mcommit d634cfacd8a18aa24579471253b63fb1a4b3008c[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Fri Dec 21 11:58:52 2018 +0100
+
+    Ajout de la colonne (field) commentaire au managed-shema via l'API
+
+[33mcommit 4682f88dd05c7a77c99aa6e7066a9a6a5e5b5b35[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Fri Dec 21 11:55:19 2018 +0100
+
+    Création des field prenom, nom nécessaire a l'indexation des données de la bdd a partir de l'API donc modification du managed-shema
+
+[33mcommit 84d8080929bce5af2d7e4f56f56f2107a675d800[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Fri Dec 21 10:28:34 2018 +0100
+
+    suppression des parametres par defaut au sujet de l'indexation de document car DANGER lors de la mise en production
+
+[33mcommit f78cd6304d6017cb2f04d91ab09a6d284d51353f[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Thu Dec 20 15:05:07 2018 +0100
+
+    Création d'un core core_blog sur le port 8983 avec la commande (solr.cmd create -c core_blog)1
+
+[33mcommit 0c5c5e6123bfcddc7b06bcbf6f2cdf1636957753[m
+Author: Saïd Belhadj <saidbelhadj75019@gmail.com>
+Date:   Thu Dec 20 14:40:13 2018 +0100
+
+    Ajout de Solr-7.5.0

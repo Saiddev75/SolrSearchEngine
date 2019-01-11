@@ -1,64 +1,846 @@
-2019-01-09 09:18:34.647 INFO  (main) [   ] o.e.j.u.log Logging initialized @949ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-01-09 09:18:34.803 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
-2019-01-09 09:18:34.831 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/saidb/Documents/SolrSearchEngine/server/contexts/] at interval 0
-2019-01-09 09:18:35.267 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-01-09 09:18:35.275 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-01-09 09:18:35.275 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-01-09 09:18:35.279 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2019-01-09 09:18:35.327 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
-2019-01-09 09:18:35.355 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-01-09 09:18:35.359 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
-2019-01-09 09:18:35.359 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-01-09 09:18:35.359 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\saidb\Documents\SolrSearchEngine
-2019-01-09 09:18:35.359 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-01-09T09:18:35.359Z
-2019-01-09 09:18:35.379 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\saidb\Documents\SolrSearchEngine\server\solr
-2019-01-09 09:18:35.383 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\saidb\Documents\SolrSearchEngine\server\solr\solr.xml
-2019-01-09 09:18:35.427 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21, but no JMX reporters were configured - adding default JMX reporter.
-2019-01-09 09:18:40.822 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-01-09 09:18:40.826 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-01-09 09:18:40.906 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-09 09:18:40.906 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-09 09:18:40.914 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-09 09:18:40.958 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\saidb\Documents\SolrSearchEngine\server\solr
-2019-01-09 09:18:40.958 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [core_blog]
-2019-01-09 09:18:41.026 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrResourceLoader [core_blog] Added 59 libs to classloader, from paths: [/C:/Users/saidb/Documents/SolrSearchEngine/contrib/clustering/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/dataimporthandler/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/extraction/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/langid/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/velocity/lib, /C:/Users/saidb/Documents/SolrSearchEngine/dist]
-2019-01-09 09:18:41.234 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
-2019-01-09 09:18:41.406 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema [core_blog] Schema name=default-config
-2019-01-09 09:18:41.450 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e50c791{/solr,file:///C:/Users/saidb/Documents/SolrSearchEngine/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
-2019-01-09 09:18:41.466 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-01-09 09:18:41.466 INFO  (main) [   ] o.e.j.s.Server Started @7771ms
-2019-01-09 09:18:41.874 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-01-09 09:18:41.918 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.CoreContainer Creating SolrCore 'core_blog' using configuration from instancedir C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog, trusted=true
-2019-01-09 09:18:41.950 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.core_blog' (registry 'solr.core.core_blog') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-09 09:18:41.970 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrCore [[core_blog] ] Opening new SolrCore at [C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog], dataDir=[C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\data\]
-2019-01-09 09:18:42.016 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-01-09 09:18:42.188 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=35
-2019-01-09 09:18:46.968 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-01-09 09:18:46.968 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-01-09 09:18:46.984 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-01-09 09:18:46.984 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-01-09 09:18:47.068 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.SolrIndexSearcher Opening [Searcher@48f7a0ac[core_blog] main]
-2019-01-09 09:18:47.076 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\conf
-2019-01-09 09:18:47.093 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-01-09 09:18:47.093 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-01-09 09:18:47.093 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
-2019-01-09 09:18:47.093 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=prenom,nomField=nom,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2019-01-09 09:18:47.108 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=prenom,nomField=nom,suggestAnalyzerFieldType=string,buildOnStartup=false}
-2019-01-09 09:18:47.108 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-01-09 09:18:47.108 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@48f7a0ac[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
-2019-01-09 09:18:47.108 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-01-09 09:18:47.108 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-01-09 09:18:47.124 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@48f7a0ac[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
-2019-01-09 09:28:12.444 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-01-09 09:28:12.444 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-01-09 09:28:12.448 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1834361038
-2019-01-09 09:28:12.448 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-01-09 09:28:12.448 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1dd6d4b7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@3d0bc87b
-2019-01-09 09:28:12.452 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-01-09 09:28:12.456 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3401a114: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@4f9dbdaf
-2019-01-09 09:28:12.456 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-01-09 09:28:12.456 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5066d65f: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@179a1fb6
-2019-01-09 09:28:12.456 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.c.SolrCore [core_blog]  CLOSING SolrCore org.apache.solr.core.SolrCore@52dde1fe
-2019-01-09 09:28:12.456 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.core_blog, tag=52dde1fe
-2019-01-09 09:28:12.456 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@53c22dab: rootName = null, domain = solr.core.core_blog, service url = null, agent id = null] for registry solr.core.core_blog / com.codahale.metrics.MetricRegistry@3c30af84
-2019-01-09 09:28:12.488 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4e50c791{/solr,null,UNAVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
+2019-01-10 13:37:37.170 INFO  (main) [   ] o.e.j.u.log Logging initialized @4070ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-10 13:37:37.610 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
+2019-01-10 13:37:37.641 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/saidb/Documents/SolrSearchEngine/server/contexts/] at interval 0
+2019-01-10 13:37:38.187 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-01-10 13:37:38.187 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-01-10 13:37:38.187 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-01-10 13:37:38.203 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2019-01-10 13:37:38.296 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-01-10 13:37:38.328 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-01-10 13:37:38.343 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
+2019-01-10 13:37:38.343 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-01-10 13:37:38.343 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\saidb\Documents\SolrSearchEngine
+2019-01-10 13:37:38.343 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-01-10T13:37:38.343Z
+2019-01-10 13:37:38.406 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\saidb\Documents\SolrSearchEngine\server\solr
+2019-01-10 13:37:38.406 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\saidb\Documents\SolrSearchEngine\server\solr\solr.xml
+2019-01-10 13:37:38.468 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21, but no JMX reporters were configured - adding default JMX reporter.
+2019-01-10 13:37:47.585 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-01-10 13:37:47.585 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-01-10 13:37:47.664 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 13:37:47.664 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 13:37:47.680 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 13:37:47.805 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\saidb\Documents\SolrSearchEngine\server\solr
+2019-01-10 13:37:47.805 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [core_blog]
+2019-01-10 13:37:47.915 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrResourceLoader [core_blog] Added 59 libs to classloader, from paths: [/C:/Users/saidb/Documents/SolrSearchEngine/contrib/clustering/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/dataimporthandler/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/extraction/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/langid/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/velocity/lib, /C:/Users/saidb/Documents/SolrSearchEngine/dist]
+2019-01-10 13:37:48.186 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e50c791{/solr,file:///C:/Users/saidb/Documents/SolrSearchEngine/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
+2019-01-10 13:37:48.202 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-01-10 13:37:48.202 INFO  (main) [   ] o.e.j.s.Server Started @15105ms
+2019-01-10 13:37:49.240 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=162
+2019-01-10 13:37:50.659 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2019-01-10 13:37:50.828 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema [core_blog] Schema name=default-config
+2019-01-10 13:37:52.015 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-01-10 13:37:52.046 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.CoreContainer Creating SolrCore 'core_blog' using configuration from instancedir C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog, trusted=true
+2019-01-10 13:37:52.064 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.core_blog' (registry 'solr.core.core_blog') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 13:37:52.080 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrCore [[core_blog] ] Opening new SolrCore at [C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog], dataDir=[C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\data\]
+2019-01-10 13:37:52.143 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-01-10 13:37:57.289 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-01-10 13:37:57.289 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-01-10 13:37:57.414 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-01-10 13:37:57.414 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-01-10 13:37:57.617 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.SolrIndexSearcher Opening [Searcher@59d2cf53[core_blog] main]
+2019-01-10 13:37:57.680 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\conf
+2019-01-10 13:37:57.727 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-01-10 13:37:57.742 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-01-10 13:37:57.742 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2019-01-10 13:37:57.757 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=prenom,suggestAnalyzerFieldType=text_general,buildOnStartup=false}
+2019-01-10 13:37:57.773 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=prenom,suggestAnalyzerFieldType=text_general,buildOnStartup=false}
+2019-01-10 13:37:57.789 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-01-10 13:37:57.804 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@59d2cf53[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
+2019-01-10 13:37:57.804 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 13:37:57.804 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-01-10 13:37:57.804 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@59d2cf53[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
+2019-01-10 13:38:14.975 INFO  (qtp1571967156-19) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={q=} hits=14 status=0 QTime=100
+2019-01-10 13:38:14.975 INFO  (qtp1571967156-19) [   x:core_blog] o.a.s.c.PluginBag Going to create a new queryResponseWriter with {type = queryResponseWriter,name = velocity,class = solr.VelocityResponseWriter,attributes = {startup=lazy, name=velocity, class=solr.VelocityResponseWriter},args = {template.base.dir=,solr.resource.loader.enabled=true,params.resource.loader.enabled=false}} 
+2019-01-10 13:38:22.267 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={q=ser} hits=0 status=0 QTime=203
+2019-01-10 13:39:29.106 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={} hits=14 status=0 QTime=0
+2019-01-10 13:50:30.739 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/browse params={} hits=14 status=0 QTime=0
+2019-01-10 14:52:20.473 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=2
+2019-01-10 14:52:20.502 INFO  (qtp1571967156-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=30
+2019-01-10 14:52:55.735 INFO  (qtp1571967156-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=21
+2019-01-10 14:53:11.875 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:53:11.910 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=35
+2019-01-10 14:53:11.933 INFO  (qtp1571967156-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=20
+2019-01-10 14:53:16.719 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:53:16.726 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1547131996713} status=0 QTime=4
+2019-01-10 14:53:16.730 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=5
+2019-01-10 14:53:16.732 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1547131940242&ts=1547131940242} status=503 QTime=1
+2019-01-10 14:53:16.786 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=66
+2019-01-10 14:53:16.786 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/system params={wt=json&_=1547131996713} status=0 QTime=59
+2019-01-10 14:53:23.814 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:53:23.849 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=34
+2019-01-10 14:53:25.738 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={wt=json&_=1547131940242&ts=1547131940242} hits=14 status=0 QTime=1
+2019-01-10 14:53:25.738 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={wt=json&_=1547131940242&ts=1547131940242} status=0 QTime=1
+2019-01-10 14:53:26.794 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:53:26.797 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=1
+2019-01-10 14:53:26.823 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=29
+2019-01-10 14:53:26.836 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:53:26.840 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:26.864 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1547132006781} status=0 QTime=24
+2019-01-10 14:53:26.867 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=30
+2019-01-10 14:53:26.887 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:30.071 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 14:53:30.111 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 14:53:30.140 INFO  (Thread-20) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 14:53:30.140 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1547132006781&verbose=false} status=0 QTime=70
+2019-01-10 14:53:30.145 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:30.167 INFO  (Thread-20) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 14:53:30.436 INFO  (Thread-20) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 14:53:30.826 INFO  (Thread-20) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 387
+2019-01-10 14:53:30.998 INFO  (Thread-20) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-01-10 14:53:30.998 INFO  (Thread-20) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1622285495564238849,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-10 14:53:30.998 INFO  (Thread-20) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@781010f8 commitCommandVersion:1622285495564238849
+2019-01-10 14:53:31.326 INFO  (Thread-20) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5d126adf[core_blog] main]
+2019-01-10 14:53:31.328 INFO  (Thread-20) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-10 14:53:31.328 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5d126adf[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(7.5.0):C14)))}
+2019-01-10 14:53:31.328 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 14:53:31.334 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@5d126adf[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(7.5.0):C14)))}
+2019-01-10 14:53:31.343 INFO  (Thread-20) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 14:53:31.343 INFO  (Thread-20) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-01-10 14:53:31.349 INFO  (Thread-20) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:1.180
+2019-01-10 14:53:31.349 INFO  (Thread-20) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1547132006781&verbose=false} status=0 QTime=70{add=[2 (1622285495399612416), 3 (1622285495547461632), 4 (1622285495547461633), 5 (1622285495547461634), 6 (1622285495547461635), 7 (1622285495547461636), 8 (1622285495547461637), 9 (1622285495547461638), 10 (1622285495547461639), 11 (1622285495547461640), ... (14 adds)],commit=} 0 1279
+2019-01-10 14:53:31.859 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:43.815 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:45.383 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:45.826 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:46.301 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:47.045 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:47.812 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:49.661 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 14:53:49.663 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 14:53:49.664 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=3
+2019-01-10 14:53:49.664 INFO  (Thread-21) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 14:53:49.668 INFO  (Thread-21) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 14:53:49.669 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:49.688 INFO  (Thread-21) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@16ef5f94[core_blog] realtime]
+2019-01-10 14:53:49.692 INFO  (Thread-21) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 14:53:49.697 INFO  (Thread-21) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2019-01-10 14:53:49.705 INFO  (Thread-21) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-01-10 14:53:49.705 INFO  (Thread-21) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1622285515179950081,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-10 14:53:49.705 INFO  (Thread-21) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@781010f8 commitCommandVersion:1622285515179950081
+2019-01-10 14:53:49.813 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:49.987 INFO  (Thread-21) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@33d69dd[core_blog] main]
+2019-01-10 14:53:49.987 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@33d69dd[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(7.5.0):C14)))}
+2019-01-10 14:53:49.987 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 14:53:49.987 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@33d69dd[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(7.5.0):C14)))}
+2019-01-10 14:53:50.002 INFO  (Thread-21) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-10 14:53:50.002 INFO  (Thread-21) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 14:53:50.002 INFO  (Thread-21) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-01-10 14:53:50.019 INFO  (Thread-21) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.351
+2019-01-10 14:53:50.019 INFO  (Thread-21) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=3{deleteByQuery=*:* (-1622285515142201344),add=[2 (1622285515172610048), 3 (1622285515174707200), 4 (1622285515175755776), 5 (1622285515175755777), 6 (1622285515176804352), 7 (1622285515176804353), 8 (1622285515176804354), 9 (1622285515177852928), 10 (1622285515177852929), 11 (1622285515177852930), ... (14 adds)],commit=} 0 359
+2019-01-10 14:53:51.813 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:53.813 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:55.813 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:57.813 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:53:59.037 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:53:59.061 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1547132039032} status=0 QTime=22
+2019-01-10 14:53:59.065 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=28
+2019-01-10 14:54:02.287 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:54:02.292 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1547131996713} status=0 QTime=0
+2019-01-10 14:54:02.296 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=3
+2019-01-10 14:54:02.297 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1547131940242&ts=1547131940242} status=503 QTime=0
+2019-01-10 14:54:02.351 INFO  (qtp1571967156-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=62
+2019-01-10 14:54:02.351 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/system params={wt=json&_=1547131996713} status=0 QTime=56
+2019-01-10 14:54:05.213 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:54:05.216 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 14:54:05.250 INFO  (qtp1571967156-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=36
+2019-01-10 14:54:05.252 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:54:05.256 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 14:54:05.260 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1547132006781} status=0 QTime=0
+2019-01-10 14:54:05.272 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:54:05.283 INFO  (qtp1571967156-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=27
+2019-01-10 14:55:31.802 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:55:33.802 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:55:35.803 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:55:36.820 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:55:36.844 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=24
+2019-01-10 14:55:40.313 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&_=1547131940434} hits=14 status=0 QTime=0
+2019-01-10 14:55:52.857 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&rows=20&_=1547131940434} hits=14 status=0 QTime=0
+2019-01-10 14:56:08.591 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&rows=20&_=1547131940434} hits=14 status=0 QTime=0
+2019-01-10 14:56:12.784 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:56:12.787 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:12.818 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:56:12.821 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:12.822 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=36
+2019-01-10 14:56:12.823 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:12.836 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:12.858 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=32
+2019-01-10 14:56:15.760 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:17.770 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:19.124 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 14:56:19.126 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 14:56:19.126 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1547132006781&verbose=false} status=0 QTime=3
+2019-01-10 14:56:19.127 INFO  (Thread-22) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 14:56:19.131 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:19.131 INFO  (Thread-22) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 14:56:19.135 INFO  (Thread-22) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 14:56:19.143 INFO  (Thread-22) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 7
+2019-01-10 14:56:19.152 INFO  (Thread-22) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-01-10 14:56:19.152 INFO  (Thread-22) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1622285671886487554,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-10 14:56:19.152 INFO  (Thread-22) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@781010f8 commitCommandVersion:1622285671886487554
+2019-01-10 14:56:19.444 INFO  (Thread-22) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@b7f27fa[core_blog] main]
+2019-01-10 14:56:19.444 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@b7f27fa[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(7.5.0):C15)))}
+2019-01-10 14:56:19.444 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 14:56:19.444 INFO  (Thread-22) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-10 14:56:19.459 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@b7f27fa[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(7.5.0):C15)))}
+2019-01-10 14:56:19.459 INFO  (Thread-22) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 14:56:19.459 INFO  (Thread-22) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-01-10 14:56:19.459 INFO  (Thread-22) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.338
+2019-01-10 14:56:19.459 INFO  (Thread-22) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1547132006781&verbose=false} status=0 QTime=3{add=[2 (1622285671878098944), 3 (1622285671880196096), 4 (1622285671881244672), 5 (1622285671881244673), 6 (1622285671882293248), 7 (1622285671883341824), 8 (1622285671883341825), 9 (1622285671884390400), 10 (1622285671884390401), 11 (1622285671884390402), ... (15 adds)],commit=} 0 347
+2019-01-10 14:56:19.762 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:21.762 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:23.772 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:25.761 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:27.771 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:29.771 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:31.773 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:33.772 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:35.765 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:37.774 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:39.762 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:41.762 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:43.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:44.476 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 14:56:44.478 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 14:56:44.478 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=3
+2019-01-10 14:56:44.479 INFO  (Thread-23) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 14:56:44.484 INFO  (Thread-23) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 14:56:44.486 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:44.489 INFO  (Thread-23) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 14:56:44.496 INFO  (Thread-23) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2019-01-10 14:56:44.506 INFO  (Thread-23) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-01-10 14:56:44.507 INFO  (Thread-23) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1622285698473132032,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-10 14:56:44.507 INFO  (Thread-23) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@781010f8 commitCommandVersion:1622285698473132032
+2019-01-10 14:56:44.910 INFO  (Thread-23) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@31101b50[core_blog] main]
+2019-01-10 14:56:44.910 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@31101b50[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(7.5.0):C15)))}
+2019-01-10 14:56:44.910 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 14:56:44.910 INFO  (Thread-23) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-10 14:56:44.925 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@31101b50[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(7.5.0):C15)))}
+2019-01-10 14:56:44.925 INFO  (Thread-23) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 14:56:44.925 INFO  (Thread-23) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-01-10 14:56:44.925 INFO  (Thread-23) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.451
+2019-01-10 14:56:44.925 INFO  (Thread-23) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=3{add=[2 (1622285698462646272), 3 (1622285698464743424), 4 (1622285698465792000), 5 (1622285698466840576), 6 (1622285698466840577), 7 (1622285698466840578), 8 (1622285698467889152), 9 (1622285698467889153), 10 (1622285698468937728), 11 (1622285698468937729), ... (15 adds)],commit=} 0 461
+2019-01-10 14:56:45.760 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:46.090 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:47.761 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:49.769 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:51.987 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:53.989 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:55.994 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:57.989 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:56:59.988 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:01.989 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:03.992 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:05.990 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:07.993 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:09.989 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:11.994 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:13.992 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:15.990 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:17.987 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:19.993 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:21.992 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:23.988 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:25.989 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:27.987 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:29.987 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:31.771 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:33.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:35.772 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:37.762 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:39.762 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:41.771 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:43.773 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:45.762 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:47.765 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:49.764 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:51.762 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:53.773 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:55.760 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:57.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:57:59.772 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:01.772 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:03.760 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:05.763 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:07.772 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:09.762 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:11.773 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:13.773 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:15.761 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:17.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:19.762 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:21.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:23.988 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:25.989 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:27.762 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:29.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:31.772 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:33.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:35.771 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:37.774 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:39.771 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:41.775 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:43.772 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:45.771 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:47.767 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:49.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:51.760 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:53.761 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:55.761 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:57.760 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:58:59.026 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:58:59.061 INFO  (qtp1571967156-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=33
+2019-01-10 14:59:02.989 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:59:02.997 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1547131996713} status=0 QTime=5
+2019-01-10 14:59:02.999 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/config params={wt=json&_=1547132342969} status=0 QTime=5
+2019-01-10 14:59:03.021 INFO  (qtp1571967156-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=31
+2019-01-10 14:59:03.069 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1547131996713} status=0 QTime=1
+2019-01-10 14:59:06.088 INFO  (qtp1571967156-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:59:06.090 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:06.121 INFO  (qtp1571967156-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:59:06.122 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=33
+2019-01-10 14:59:06.124 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:06.125 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:06.149 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:06.152 INFO  (qtp1571967156-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=26
+2019-01-10 14:59:12.758 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:14.482 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:16.489 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:18.483 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:20.485 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:22.485 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 14:59:22.774 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:59:22.781 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=2
+2019-01-10 14:59:22.804 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=29
+2019-01-10 14:59:24.976 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:59:24.999 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=23
+2019-01-10 14:59:26.326 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:59:26.330 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 14:59:26.356 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=29
+2019-01-10 14:59:31.120 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 14:59:32.639 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 14:59:33.347 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 14:59:33.745 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 14:59:34.160 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 14:59:34.475 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 14:59:36.735 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 14:59:36.752 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1547132006781} status=0 QTime=14
+2019-01-10 14:59:36.767 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=31
+2019-01-10 15:00:06.977 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:06.980 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1547131996713} status=0 QTime=1
+2019-01-10 15:00:06.981 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/config params={wt=json&_=1547132342969} status=0 QTime=0
+2019-01-10 15:00:07.005 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=28
+2019-01-10 15:00:07.044 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1547131996713} status=0 QTime=1
+2019-01-10 15:00:08.894 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:08.900 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/segments params={wt=json&_=1547132408891} status=0 QTime=3
+2019-01-10 15:00:08.921 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=26
+2019-01-10 15:00:13.281 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:13.282 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1547131996713} status=0 QTime=0
+2019-01-10 15:00:13.287 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1547131940242&ts=1547131940242} status=503 QTime=0
+2019-01-10 15:00:13.288 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=2
+2019-01-10 15:00:13.334 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=52
+2019-01-10 15:00:13.334 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/system params={wt=json&_=1547131996713} status=0 QTime=48
+2019-01-10 15:00:15.322 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:15.326 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1547131996713} status=0 QTime=1
+2019-01-10 15:00:15.351 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=27
+2019-01-10 15:00:16.186 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:16.189 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:16.215 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=27
+2019-01-10 15:00:16.233 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:16.237 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:16.238 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:16.251 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:16.265 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=31
+2019-01-10 15:00:19.247 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 15:00:19.249 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 15:00:19.250 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1547132006781&verbose=false} status=0 QTime=3
+2019-01-10 15:00:19.250 INFO  (Thread-24) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 15:00:19.254 INFO  (Thread-24) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:19.255 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:19.259 INFO  (Thread-24) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 15:00:19.264 INFO  (Thread-24) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2019-01-10 15:00:19.275 INFO  (Thread-24) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-01-10 15:00:19.276 INFO  (Thread-24) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1622285923674750976,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-10 15:00:19.276 INFO  (Thread-24) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@781010f8 commitCommandVersion:1622285923674750976
+2019-01-10 15:00:19.593 INFO  (Thread-24) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@57533818[core_blog] main]
+2019-01-10 15:00:19.593 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@57533818[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(7.5.0):C16)))}
+2019-01-10 15:00:19.593 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 15:00:19.593 INFO  (Thread-24) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-10 15:00:19.593 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@57533818[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(7.5.0):C16)))}
+2019-01-10 15:00:19.593 INFO  (Thread-24) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:19.593 INFO  (Thread-24) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-01-10 15:00:19.593 INFO  (Thread-24) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.349
+2019-01-10 15:00:19.593 INFO  (Thread-24) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1547132006781&verbose=false} status=0 QTime=3{add=[2 (1622285923663216640), 3 (1622285923666362368), 4 (1622285923667410944), 5 (1622285923667410945), 6 (1622285923668459520), 7 (1622285923670556672), 8 (1622285923670556673), 9 (1622285923671605248), 10 (1622285923671605249), 11 (1622285923671605250), ... (16 adds)],commit=} 0 357
+2019-01-10 15:00:21.235 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 15:00:21.237 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 15:00:21.238 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1547132006781&verbose=false} status=0 QTime=3
+2019-01-10 15:00:21.238 INFO  (Thread-25) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 15:00:21.242 INFO  (Thread-25) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:21.243 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:21.247 INFO  (Thread-25) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 15:00:21.251 INFO  (Thread-25) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2019-01-10 15:00:21.258 INFO  (Thread-25) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-01-10 15:00:21.258 INFO  (Thread-25) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1622285925753028609,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-10 15:00:21.258 INFO  (Thread-25) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@781010f8 commitCommandVersion:1622285925753028609
+2019-01-10 15:00:21.561 INFO  (Thread-25) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@24f67fc1[core_blog] main]
+2019-01-10 15:00:21.561 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@24f67fc1[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_8(7.5.0):C16)))}
+2019-01-10 15:00:21.561 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 15:00:21.561 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@24f67fc1[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_8(7.5.0):C16)))}
+2019-01-10 15:00:21.577 INFO  (Thread-25) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-10 15:00:21.592 INFO  (Thread-25) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:21.592 INFO  (Thread-25) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-01-10 15:00:21.592 INFO  (Thread-25) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.355
+2019-01-10 15:00:21.592 INFO  (Thread-25) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1547132006781&verbose=false} status=0 QTime=3{add=[2 (1622285925746737152), 3 (1622285925748834304), 4 (1622285925748834305), 5 (1622285925748834306), 6 (1622285925749882880), 7 (1622285925749882881), 8 (1622285925749882882), 9 (1622285925749882883), 10 (1622285925750931456), 11 (1622285925750931457), ... (16 adds)],commit=} 0 362
+2019-01-10 15:00:27.228 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 15:00:27.230 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 15:00:27.230 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2
+2019-01-10 15:00:27.231 INFO  (Thread-26) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 15:00:27.234 INFO  (Thread-26) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:27.236 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:27.237 INFO  (Thread-26) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@2aa6943f[core_blog] realtime]
+2019-01-10 15:00:27.241 INFO  (Thread-26) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 15:00:27.248 INFO  (Thread-26) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2019-01-10 15:00:27.256 INFO  (Thread-26) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2019-01-10 15:00:27.256 INFO  (Thread-26) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1622285932042387456,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-01-10 15:00:27.256 INFO  (Thread-26) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@781010f8 commitCommandVersion:1622285932042387456
+2019-01-10 15:00:27.693 INFO  (Thread-26) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@3d2ec08e[core_blog] main]
+2019-01-10 15:00:27.693 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3d2ec08e[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_9(7.5.0):C16)))}
+2019-01-10 15:00:27.693 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 15:00:27.709 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@3d2ec08e[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_9(7.5.0):C16)))}
+2019-01-10 15:00:27.709 INFO  (Thread-26) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-01-10 15:00:27.709 INFO  (Thread-26) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:27.709 INFO  (Thread-26) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2019-01-10 15:00:27.709 INFO  (Thread-26) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.485
+2019-01-10 15:00:27.709 INFO  (Thread-26) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2{deleteByQuery=*:* (-1622285932020367360),add=[2 (1622285932035047424), 3 (1622285932036096000), 4 (1622285932037144576), 5 (1622285932037144577), 6 (1622285932038193152), 7 (1622285932039241728), 8 (1622285932039241729), 9 (1622285932039241730), 10 (1622285932039241731), 11 (1622285932040290304), ... (16 adds)],commit=} 0 492
+2019-01-10 15:00:34.462 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 15:00:34.463 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 15:00:34.464 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&rows=20&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2
+2019-01-10 15:00:34.464 INFO  (Thread-27) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 15:00:34.468 INFO  (Thread-27) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:34.469 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:34.471 INFO  (Thread-27) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@15988e3a[core_blog] realtime]
+2019-01-10 15:00:34.474 INFO  (Thread-27) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 15:00:34.479 INFO  (Thread-27) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2019-01-10 15:00:34.488 ERROR (Thread-27) [   ] o.a.s.h.d.DocBuilder Exception while processing: blog_pro document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Illegal value for setFetchSize().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.setFetchSize(StatementImpl.java:2317)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.createStatement(JdbcDataSource.java:343)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:318)
+	... 14 more
+
+2019-01-10 15:00:34.488 INFO  (Thread-27) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&rows=20&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2{deleteByQuery=*:* (-1622285939604717568)} 0 26
+2019-01-10 15:00:34.489 ERROR (Thread-27) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLException: Illegal value for setFetchSize().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.setFetchSize(StatementImpl.java:2317)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.createStatement(JdbcDataSource.java:343)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:318)
+	... 14 more
+
+2019-01-10 15:00:34.490 INFO  (Thread-27) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2019-01-10 15:00:34.493 INFO  (Thread-27) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-01-10 15:00:34.493 INFO  (Thread-27) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2019-01-10 15:00:39.564 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 15:00:39.566 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 15:00:39.566 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&rows=20&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2
+2019-01-10 15:00:39.566 INFO  (Thread-28) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 15:00:39.572 INFO  (Thread-28) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:39.572 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:39.577 INFO  (Thread-28) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@7cd135dc[core_blog] realtime]
+2019-01-10 15:00:39.579 INFO  (Thread-28) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@789fada4[core_blog] realtime]
+2019-01-10 15:00:39.583 INFO  (Thread-28) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 15:00:39.592 INFO  (Thread-28) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 9
+2019-01-10 15:00:39.594 ERROR (Thread-28) [   ] o.a.s.h.d.DocBuilder Exception while processing: blog_pro document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Illegal value for setFetchSize().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.setFetchSize(StatementImpl.java:2317)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.createStatement(JdbcDataSource.java:343)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:318)
+	... 14 more
+
+2019-01-10 15:00:39.594 INFO  (Thread-28) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&rows=20&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2{deleteByQuery=*:* (-1622285944956649472)} 0 31
+2019-01-10 15:00:39.594 ERROR (Thread-28) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLException: Illegal value for setFetchSize().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.setFetchSize(StatementImpl.java:2317)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.createStatement(JdbcDataSource.java:343)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:318)
+	... 14 more
+
+2019-01-10 15:00:39.595 INFO  (Thread-28) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2019-01-10 15:00:39.608 INFO  (Thread-28) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-01-10 15:00:39.608 INFO  (Thread-28) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2019-01-10 15:00:40.836 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 15:00:40.838 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 15:00:40.839 INFO  (Thread-29) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 15:00:40.839 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&rows=20&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2
+2019-01-10 15:00:40.842 INFO  (Thread-29) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:40.843 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:40.846 INFO  (Thread-29) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5c83d5a[core_blog] realtime]
+2019-01-10 15:00:40.847 INFO  (Thread-29) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@186443b[core_blog] realtime]
+2019-01-10 15:00:40.851 INFO  (Thread-29) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 15:00:40.857 INFO  (Thread-29) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2019-01-10 15:00:40.857 ERROR (Thread-29) [   ] o.a.s.h.d.DocBuilder Exception while processing: blog_pro document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Illegal value for setFetchSize().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.setFetchSize(StatementImpl.java:2317)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.createStatement(JdbcDataSource.java:343)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:318)
+	... 14 more
+
+2019-01-10 15:00:40.858 INFO  (Thread-29) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&rows=20&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2{deleteByQuery=*:* (-1622285946288340992)} 0 21
+2019-01-10 15:00:40.865 ERROR (Thread-29) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLException: Illegal value for setFetchSize().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.setFetchSize(StatementImpl.java:2317)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.createStatement(JdbcDataSource.java:343)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:318)
+	... 14 more
+
+2019-01-10 15:00:40.865 INFO  (Thread-29) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2019-01-10 15:00:40.875 INFO  (Thread-29) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-01-10 15:00:40.875 INFO  (Thread-29) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2019-01-10 15:00:41.603 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2019-01-10 15:00:41.605 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2019-01-10 15:00:41.605 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&rows=20&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2
+2019-01-10 15:00:41.605 INFO  (Thread-30) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2019-01-10 15:00:41.609 INFO  (Thread-30) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2019-01-10 15:00:41.610 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:41.614 INFO  (Thread-30) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5e58b7c5[core_blog] realtime]
+2019-01-10 15:00:41.615 INFO  (Thread-30) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@5caec817[core_blog] realtime]
+2019-01-10 15:00:41.618 INFO  (Thread-30) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity blog_pro with URL: jdbc:mysql://localhost:3306/blog
+2019-01-10 15:00:41.624 INFO  (Thread-30) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2019-01-10 15:00:41.625 ERROR (Thread-30) [   ] o.a.s.h.d.DocBuilder Exception while processing: blog_pro document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLException: Illegal value for setFetchSize().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.setFetchSize(StatementImpl.java:2317)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.createStatement(JdbcDataSource.java:343)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:318)
+	... 14 more
+
+2019-01-10 15:00:41.625 INFO  (Thread-30) [   ] o.a.s.u.p.LogUpdateProcessorFactory [core_blog]  webapp=/solr path=/dataimport params={core=core_blog&indent=on&commit=true&name=dataimport&clean=true&rows=20&wt=json&command=full-import&entity=blog_pro&_=1547132006781&verbose=false} status=0 QTime=2{deleteByQuery=*:* (-1622285947093647360)} 0 22
+2019-01-10 15:00:41.626 ERROR (Thread-30) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: SELECT * from blog_pro Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLException: Illegal value for setFetchSize().
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861)
+	at com.mysql.jdbc.StatementImpl.setFetchSize(StatementImpl.java:2317)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.createStatement(JdbcDataSource.java:343)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:318)
+	... 14 more
+
+2019-01-10 15:00:41.626 INFO  (Thread-30) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2019-01-10 15:00:41.629 INFO  (Thread-30) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2019-01-10 15:00:41.629 INFO  (Thread-30) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2019-01-10 15:00:43.452 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:47.439 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:49.453 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1547132006781} status=0 QTime=0
+2019-01-10 15:00:51.148 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:51.172 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=23
+2019-01-10 15:00:53.252 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:53.255 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 15:00:53.256 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1547131996713} status=0 QTime=3
+2019-01-10 15:00:53.259 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1547131940242&ts=1547131940242} status=503 QTime=0
+2019-01-10 15:00:53.306 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/system params={wt=json&_=1547131996713} status=0 QTime=51
+2019-01-10 15:00:53.307 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=54
+2019-01-10 15:00:55.644 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:00:55.648 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1547132455632&since=0} status=0 QTime=1
+2019-01-10 15:00:55.672 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=27
+2019-01-10 15:01:05.644 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1547132455632&since=0} status=0 QTime=0
+2019-01-10 15:01:15.643 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1547132455632&since=0} status=0 QTime=0
+2019-01-10 15:01:24.108 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:01:24.136 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=26
+2019-01-10 15:01:24.161 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=22
+2019-01-10 15:01:28.024 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:01:28.027 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1547131996713} status=0 QTime=1
+2019-01-10 15:01:28.049 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=22
+2019-01-10 15:01:28.049 INFO  (qtp1571967156-58) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1547131940242&ts=1547131940242} status=503 QTime=0
+2019-01-10 15:01:28.076 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=50
+2019-01-10 15:01:28.085 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/system params={wt=json&_=1547131996713} status=0 QTime=40
+2019-01-10 15:01:30.873 INFO  (qtp1571967156-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:01:30.899 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=24
+2019-01-10 15:01:43.546 INFO  (qtp1571967156-39) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&rows=50&_=1547131940434} hits=16 status=0 QTime=0
+2019-01-10 15:02:12.123 INFO  (qtp1571967156-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:12.129 INFO  (qtp1571967156-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1547132039032} status=0 QTime=5
+2019-01-10 15:02:12.154 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=31
+2019-01-10 15:02:13.636 INFO  (qtp1571967156-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:13.640 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1547132533622} status=0 QTime=0
+2019-01-10 15:02:13.664 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=26
+2019-01-10 15:02:15.128 INFO  (qtp1571967156-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:15.132 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1547131940241} status=0 QTime=2
+2019-01-10 15:02:15.156 INFO  (qtp1571967156-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=28
+2019-01-10 15:02:15.179 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:15.184 INFO  (qtp1571967156-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1547131940241} status=0 QTime=3
+2019-01-10 15:02:15.207 INFO  (qtp1571967156-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=26
+2019-01-10 15:02:16.125 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:16.127 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1547132455632&since=0} status=0 QTime=0
+2019-01-10 15:02:16.152 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=26
+2019-01-10 15:02:17.001 INFO  (qtp1571967156-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:17.029 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=27
+2019-01-10 15:02:17.052 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=21
+2019-01-10 15:02:18.315 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:18.320 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1547131940241} status=0 QTime=2
+2019-01-10 15:02:18.347 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:18.352 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1547131940241} status=0 QTime=2
+2019-01-10 15:02:18.353 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=37
+2019-01-10 15:02:18.380 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=23
+2019-01-10 15:02:19.232 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:19.238 INFO  (qtp1571967156-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1547132533622} status=0 QTime=0
+2019-01-10 15:02:19.261 INFO  (qtp1571967156-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=26
+2019-01-10 15:02:20.211 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:20.217 INFO  (qtp1571967156-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1547132039032} status=0 QTime=4
+2019-01-10 15:02:20.243 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=31
+2019-01-10 15:02:22.299 INFO  (qtp1571967156-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:22.327 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=27
+2019-01-10 15:02:22.349 INFO  (qtp1571967156-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=20
+2019-01-10 15:02:42.558 INFO  (qtp1571967156-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:42.560 INFO  (qtp1571967156-41) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1547131996713} status=0 QTime=1
+2019-01-10 15:02:42.565 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1547131940242&ts=1547131940242} status=503 QTime=0
+2019-01-10 15:02:42.565 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/replication params={wt=json&command=details&_=1547131996713} status=0 QTime=1
+2019-01-10 15:02:42.617 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/system params={wt=json&_=1547131996713} status=0 QTime=53
+2019-01-10 15:02:42.617 INFO  (qtp1571967156-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=59
+2019-01-10 15:02:44.544 INFO  (qtp1571967156-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1547131940241} status=0 QTime=0
+2019-01-10 15:02:44.567 INFO  (qtp1571967156-59) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1547131940241} status=0 QTime=22
+2019-01-10 15:03:43.783 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /suggest,class = solr.SearchHandler,attributes = {startup=lazy, name=/suggest, class=solr.SearchHandler},args = {defaults={suggest=true,suggest.count=10},components=[suggest]}} 
+2019-01-10 15:03:43.784 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=elec
+2019-01-10 15:03:43.785 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 15:03:43.970 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=elec
+2019-01-10 15:03:43.977 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=elec&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=193
+2019-01-10 15:03:48.767 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=je
+2019-01-10 15:03:48.767 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 15:03:48.776 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=je
+2019-01-10 15:03:48.777 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=je&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=10
+2019-01-10 15:03:56.738 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=je
+2019-01-10 15:03:56.738 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 15:03:56.747 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=je
+2019-01-10 15:03:56.747 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=je&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=9
+2019-01-10 15:04:03.072 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=seri
+2019-01-10 15:04:03.072 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 15:04:03.081 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=seri
+2019-01-10 15:04:03.083 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=seri&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=10
+2019-01-10 15:04:08.108 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=ha
+2019-01-10 15:04:08.109 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 15:04:08.115 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=ha
+2019-01-10 15:04:08.116 INFO  (qtp1571967156-44) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=ha&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=7
+2019-01-10 16:02:42.993 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=
+2019-01-10 16:02:42.993 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:02:43.018 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=
+2019-01-10 16:02:43.019 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=28
+2019-01-10 16:02:47.480 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=q
+2019-01-10 16:02:47.480 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:02:47.489 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=q
+2019-01-10 16:02:47.489 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=q&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=9
+2019-01-10 16:02:50.086 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=h
+2019-01-10 16:02:50.086 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:02:50.094 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=h
+2019-01-10 16:02:50.095 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=h&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=8
+2019-01-10 16:03:02.805 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=e
+2019-01-10 16:03:02.805 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:03:02.814 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=e
+2019-01-10 16:03:02.814 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=e&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=9
+2019-01-10 16:03:07.595 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=t
+2019-01-10 16:03:07.595 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:03:07.603 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=t
+2019-01-10 16:03:07.604 INFO  (qtp1571967156-24) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=t&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=8
+2019-01-10 16:03:13.951 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=h
+2019-01-10 16:03:13.951 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:03:13.958 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=h
+2019-01-10 16:03:13.959 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=h&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=8
+2019-01-10 16:03:17.109 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=h
+2019-01-10 16:03:17.109 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:03:17.115 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=h
+2019-01-10 16:03:17.115 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=h&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=6
+2019-01-10 16:03:19.795 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=b
+2019-01-10 16:03:19.795 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:03:19.802 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=b
+2019-01-10 16:03:19.802 INFO  (qtp1571967156-43) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=b&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=6
+2019-01-10 16:03:30.153 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=k
+2019-01-10 16:03:30.153 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:03:30.161 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=k
+2019-01-10 16:03:30.162 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=k&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=8
+2019-01-10 16:03:36.530 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=ke
+2019-01-10 16:03:36.530 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:03:36.537 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=ke
+2019-01-10 16:03:36.537 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=ke&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=7
+2019-01-10 16:03:42.985 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=kelly
+2019-01-10 16:03:42.985 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:03:42.992 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=kelly
+2019-01-10 16:03:42.992 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=kelly&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=7
+2019-01-10 16:04:14.077 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=s
+2019-01-10 16:04:14.077 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 16:04:14.085 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=s
+2019-01-10 16:04:14.086 INFO  (qtp1571967156-40) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=s&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=8

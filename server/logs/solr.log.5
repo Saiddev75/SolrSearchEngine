@@ -1,387 +1,77 @@
-2019-01-08 11:36:44.779 INFO  (main) [   ] o.e.j.u.log Logging initialized @3757ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-01-08 11:36:45.295 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
-2019-01-08 11:36:45.373 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/saidb/Documents/SolrSearchEngine/server/contexts/] at interval 0
-2019-01-08 11:36:45.920 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-01-08 11:36:45.920 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-01-08 11:36:45.920 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-01-08 11:36:45.920 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2019-01-08 11:36:46.014 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
-2019-01-08 11:36:46.092 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-01-08 11:36:46.108 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
-2019-01-08 11:36:46.108 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-01-08 11:36:46.108 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\saidb\Documents\SolrSearchEngine
-2019-01-08 11:36:46.108 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-01-08T11:36:46.108Z
-2019-01-08 11:36:46.217 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\saidb\Documents\SolrSearchEngine\server\solr
-2019-01-08 11:36:46.233 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\saidb\Documents\SolrSearchEngine\server\solr\solr.xml
-2019-01-08 11:36:46.498 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21, but no JMX reporters were configured - adding default JMX reporter.
-2019-01-08 11:36:55.986 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-01-08 11:36:55.986 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-01-08 11:36:56.111 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-08 11:36:56.111 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-08 11:36:56.111 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-08 11:36:56.284 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\saidb\Documents\SolrSearchEngine\server\solr
-2019-01-08 11:36:56.284 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [core_blog]
-2019-01-08 11:36:56.392 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrResourceLoader [core_blog] Added 59 libs to classloader, from paths: [/C:/Users/saidb/Documents/SolrSearchEngine/contrib/clustering/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/dataimporthandler/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/extraction/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/langid/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/velocity/lib, /C:/Users/saidb/Documents/SolrSearchEngine/dist]
-2019-01-08 11:36:57.159 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e50c791{/solr,file:///C:/Users/saidb/Documents/SolrSearchEngine/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
-2019-01-08 11:36:57.331 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-01-08 11:36:57.331 INFO  (main) [   ] o.e.j.s.Server Started @16319ms
-2019-01-08 11:36:57.768 INFO  (qtp1571967156-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=171
-2019-01-08 11:36:59.300 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
-2019-01-08 11:36:59.489 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema [core_blog] Schema name=default-config
-2019-01-08 11:37:00.700 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-01-08 11:37:00.732 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.CoreContainer Creating SolrCore 'core_blog' using configuration from instancedir C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog, trusted=true
-2019-01-08 11:37:00.748 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.core_blog' (registry 'solr.core.core_blog') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
-2019-01-08 11:37:00.772 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrCore [[core_blog] ] Opening new SolrCore at [C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog], dataDir=[C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\data\]
-2019-01-08 11:37:00.886 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-01-08 11:37:05.926 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-01-08 11:37:05.926 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-01-08 11:37:06.026 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-01-08 11:37:06.026 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-01-08 11:37:06.234 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.SolrIndexSearcher Opening [Searcher@2742f916[core_blog] main]
-2019-01-08 11:37:06.255 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\conf
-2019-01-08 11:37:06.317 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-01-08 11:37:06.324 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-01-08 11:37:06.334 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-01-08 11:37:06.347 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2742f916[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
-2019-01-08 11:37:06.347 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-01-08 11:37:06.348 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-01-08 11:37:06.352 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@2742f916[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
-2019-01-08 12:21:27.532 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} hits=14 status=0 QTime=193
-2019-01-08 12:21:27.533 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/admin/ping params={json.nl=flat&omitHeader=true&wt=json} status=0 QTime=196
-2019-01-08 13:58:16.659 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=10&wt=json} hits=14 status=0 QTime=2
-2019-01-08 13:59:05.581 ERROR (qtp1571967156-20) [   x:core_blog] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "price"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1225)
-	at org.apache.solr.parser.SolrQueryParserBase.isRangeShouldBeProtectedFromReverse(SolrQueryParserBase.java:1153)
-	at org.apache.solr.parser.SolrQueryParserBase.getRangeQuery(SolrQueryParserBase.java:1160)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:503)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:531)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
-	at java.lang.Thread.run(Unknown Source)
-
-2019-01-08 13:59:05.582 INFO  (qtp1571967156-20) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=price:[12+TO+*]&json.nl=flat&omitHeader=true&fl=id,name,price,score&start=2&sort=price+asc&rows=20&wt=json} status=400 QTime=51
-2019-01-08 13:59:13.343 ERROR (qtp1571967156-19) [   x:core_blog] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: "inStock"
-	at org.apache.solr.schema.IndexSchema.getField(IndexSchema.java:1225)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:460)
-	at org.apache.solr.request.SimpleFacets.getTermCounts(SimpleFacets.java:427)
-	at org.apache.solr.request.SimpleFacets.lambda$getFacetFieldCounts$0(SimpleFacets.java:826)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.apache.solr.request.SimpleFacets$3.execute(SimpleFacets.java:765)
-	at org.apache.solr.request.SimpleFacets.getFacetFieldCounts(SimpleFacets.java:841)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:329)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:273)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:531)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
-	at java.lang.Thread.run(Unknown Source)
-
-2019-01-08 13:59:13.344 INFO  (qtp1571967156-19) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&facet.field={!key%3Dstock}inStock&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=10&wt=json&facet=true} hits=14 status=400 QTime=59
-2019-01-08 13:59:20.015 ERROR (qtp1571967156-22) [   x:core_blog] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field inStock
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1294)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:436)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:189)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
-	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:312)
-	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:302)
-	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:317)
-	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:273)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:298)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:531)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
-	at java.lang.Thread.run(Unknown Source)
-
-2019-01-08 13:59:20.015 INFO  (qtp1571967156-22) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={facet.query={!key%3Dstock}inStock:+true&q=*:*&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=10&wt=json&facet=true} hits=14 status=400 QTime=3
-2019-01-08 13:59:37.253 ERROR (qtp1571967156-17) [   x:core_blog] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: sort param field can't be found: price
-	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:198)
-	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
-	at org.apache.solr.search.QParser.getSortSpec(QParser.java:280)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:531)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
-	at java.lang.Thread.run(Unknown Source)
-
-2019-01-08 13:59:37.253 INFO  (qtp1571967156-17) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&facet.field={!key%3Dstock}inStock&json.nl=flat&omitHeader=true&fl=id,name,price&start=2&sort=price+asc&fq=price:[1+TO+300]&rows=20&wt=json&facet=true} status=400 QTime=1
-2019-01-08 14:00:27.243 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&json.nl=flat&omitHeader=true&fl=*,score&start=0&rows=10&wt=json} hits=14 status=0 QTime=0
-2019-01-08 14:02:35.858 ERROR (qtp1571967156-15) [   x:core_blog] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: can not sort on multivalued field: nom of type: text_general
-	at org.apache.solr.schema.SchemaField.checkSortability(SchemaField.java:171)
-	at org.apache.solr.schema.FieldType.getSortedSetSortField(FieldType.java:707)
-	at org.apache.solr.schema.TextField.getSortField(TextField.java:121)
-	at org.apache.solr.schema.SchemaField.getSortField(SchemaField.java:153)
-	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:202)
-	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:60)
-	at org.apache.solr.search.QParser.getSortSpec(QParser.java:280)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:187)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:531)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
-	at java.lang.Thread.run(Unknown Source)
-
-2019-01-08 14:02:35.859 INFO  (qtp1571967156-15) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&facet.field={!key%3Dstock}inStock&json.nl=flat&omitHeader=true&fl=id,nom,prenom,commentaire&start=2&sort=nom+asc&fq=price:[1+TO+300]&rows=20&wt=json&facet=true} status=400 QTime=121
-2019-01-08 14:05:40.264 ERROR (qtp1571967156-23) [   x:core_blog] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field price
-	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1294)
-	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:436)
-	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:84)
-	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:189)
-	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:240)
-	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
-	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
-	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
-	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
-	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
-	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
-	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
-	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
-	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
-	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
-	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
-	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:207)
-	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2541)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:709)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:515)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:377)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:323)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:531)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
-	at java.lang.Thread.run(Unknown Source)
-
-2019-01-08 14:05:40.265 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/select params={q=*:*&json.nl=flat&omitHeader=true&fl=*,score&start=0&fq=price:1+OR+price:2+OR+price:3+OR+price:4+OR+price:5+OR+price:6+OR+price:7+OR+price:8+OR+price:9+OR+price:10+OR+price:11+OR+price:12+OR+price:13+OR+price:14+OR+price:15+OR+price:16+OR+price:17+OR+price:18+OR+price:19+OR+price:20+OR+price:21+OR+price:22+OR+price:23+OR+price:24+OR+price:25+OR+price:26+OR+price:27+OR+price:28+OR+price:29+OR+price:30+OR+price:31+OR+price:32+OR+price:33+OR+price:34+OR+price:35+OR+price:36+OR+price:37+OR+price:38+OR+price:39+OR+price:40+OR+price:41+OR+price:42+OR+price:43+OR+price:44+OR+price:45+OR+price:46+OR+price:47+OR+price:48+OR+price:49+OR+price:50+OR+price:51+OR+price:52+OR+price:53+OR+price:54+OR+price:55+OR+price:56+OR+price:57+OR+price:58+OR+price:59+OR+price:60+OR+price:61+OR+price:62+OR+price:63+OR+price:64+OR+price:65+OR+price:66+OR+price:67+OR+price:68+OR+price:69+OR+price:70+OR+price:71+OR+price:72+OR+price:73+OR+price:74+OR+price:75+OR+price:76+OR+price:77+OR+price:78+OR+price:79+OR+price:80+OR+price:81+OR+price:82+OR+price:83+OR+price:84+OR+price:85+OR+price:86+OR+price:87+OR+price:88+OR+price:89+OR+price:90+OR+price:91+OR+price:92+OR+price:93+OR+price:94+OR+price:95+OR+price:96+OR+price:97+OR+price:98+OR+price:99+OR+price:100+OR+price:101+OR+price:102+OR+price:103+OR+price:104+OR+price:105+OR+price:106+OR+price:107+OR+price:108+OR+price:109+OR+price:110+OR+price:111+OR+price:112+OR+price:113+OR+price:114+OR+price:115+OR+price:116+OR+price:117+OR+price:118+OR+price:119+OR+price:120+OR+price:121+OR+price:122+OR+price:123+OR+price:124+OR+price:125+OR+price:126+OR+price:127+OR+price:128+OR+price:129+OR+price:130+OR+price:131+OR+price:132+OR+price:133+OR+price:134+OR+price:135+OR+price:136+OR+price:137+OR+price:138+OR+price:139+OR+price:140+OR+price:141+OR+price:142+OR+price:143+OR+price:144+OR+price:145+OR+price:146+OR+price:147+OR+price:148+OR+price:149+OR+price:150+OR+price:151+OR+price:152+OR+price:153+OR+price:154+OR+price:155+OR+price:156+OR+price:157+OR+price:158+OR+price:159+OR+price:160+OR+price:161+OR+price:162+OR+price:163+OR+price:164+OR+price:165+OR+price:166+OR+price:167+OR+price:168+OR+price:169+OR+price:170+OR+price:171+OR+price:172+OR+price:173+OR+price:174+OR+price:175+OR+price:176+OR+price:177+OR+price:178+OR+price:179+OR+price:180+OR+price:181+OR+price:182+OR+price:183+OR+price:184+OR+price:185+OR+price:186+OR+price:187+OR+price:188+OR+price:189+OR+price:190+OR+price:191+OR+price:192+OR+price:193+OR+price:194+OR+price:195+OR+price:196+OR+price:197+OR+price:198+OR+price:199+OR+price:200+OR+price:201+OR+price:202+OR+price:203+OR+price:204+OR+price:205+OR+price:206+OR+price:207+OR+price:208+OR+price:209+OR+price:210+OR+price:211+OR+price:212+OR+price:213+OR+price:214+OR+price:215+OR+price:216+OR+price:217+OR+price:218+OR+price:219+OR+price:220+OR+price:221+OR+price:222+OR+price:223+OR+price:224+OR+price:225+OR+price:226+OR+price:227+OR+price:228+OR+price:229+OR+price:230+OR+price:231+OR+price:232+OR+price:233+OR+price:234+OR+price:235+OR+price:236+OR+price:237+OR+price:238+OR+price:239+OR+price:240+OR+price:241+OR+price:242+OR+price:243+OR+price:244+OR+price:245+OR+price:246+OR+price:247+OR+price:248+OR+price:249+OR+price:250+OR+price:251+OR+price:252+OR+price:253+OR+price:254+OR+price:255+OR+price:256+OR+price:257+OR+price:258+OR+price:259+OR+price:260+OR+price:261+OR+price:262+OR+price:263+OR+price:264+OR+price:265+OR+price:266+OR+price:267+OR+price:268+OR+price:269+OR+price:270+OR+price:271+OR+price:272+OR+price:273+OR+price:274+OR+price:275+OR+price:276+OR+price:277+OR+price:278+OR+price:279+OR+price:280+OR+price:281+OR+price:282+OR+price:283+OR+price:284+OR+price:285+OR+price:286+OR+price:287+OR+price:288+OR+price:289+OR+price:290+OR+price:291+OR+price:292+OR+price:293+OR+price:294+OR+price:295+OR+price:296+OR+price:297+OR+price:298+OR+price:299+OR+price:300+OR+price:301+OR+price:302+OR+price:303+OR+price:304+OR+price:305+OR+price:306+OR+price:307+OR+price:308+OR+price:309+OR+price:310+OR+price:311+OR+price:312+OR+price:313+OR+price:314+OR+price:315+OR+price:316+OR+price:317+OR+price:318+OR+price:319+OR+price:320+OR+price:321+OR+price:322+OR+price:323+OR+price:324+OR+price:325+OR+price:326+OR+price:327+OR+price:328+OR+price:329+OR+price:330+OR+price:331+OR+price:332+OR+price:333+OR+price:334+OR+price:335+OR+price:336+OR+price:337+OR+price:338+OR+price:339+OR+price:340+OR+price:341+OR+price:342+OR+price:343+OR+price:344+OR+price:345+OR+price:346+OR+price:347+OR+price:348+OR+price:349+OR+price:350+OR+price:351+OR+price:352+OR+price:353+OR+price:354+OR+price:355+OR+price:356+OR+price:357+OR+price:358+OR+price:359+OR+price:360+OR+price:361+OR+price:362+OR+price:363+OR+price:364+OR+price:365+OR+price:366+OR+price:367+OR+price:368+OR+price:369+OR+price:370+OR+price:371+OR+price:372+OR+price:373+OR+price:374+OR+price:375+OR+price:376+OR+price:377+OR+price:378+OR+price:379+OR+price:380+OR+price:381+OR+price:382+OR+price:383+OR+price:384+OR+price:385+OR+price:386+OR+price:387+OR+price:388+OR+price:389+OR+price:390+OR+price:391+OR+price:392+OR+price:393+OR+price:394+OR+price:395+OR+price:396+OR+price:397+OR+price:398+OR+price:399+OR+price:400+OR+price:401+OR+price:402+OR+price:403+OR+price:404+OR+price:405+OR+price:406+OR+price:407+OR+price:408+OR+price:409+OR+price:410+OR+price:411+OR+price:412+OR+price:413+OR+price:414+OR+price:415+OR+price:416+OR+price:417+OR+price:418+OR+price:419+OR+price:420+OR+price:421+OR+price:422+OR+price:423+OR+price:424+OR+price:425+OR+price:426+OR+price:427+OR+price:428+OR+price:429+OR+price:430+OR+price:431+OR+price:432+OR+price:433+OR+price:434+OR+price:435+OR+price:436+OR+price:437+OR+price:438+OR+price:439+OR+price:440+OR+price:441+OR+price:442+OR+price:443+OR+price:444+OR+price:445+OR+price:446+OR+price:447+OR+price:448+OR+price:449+OR+price:450+OR+price:451+OR+price:452+OR+price:453+OR+price:454+OR+price:455+OR+price:456+OR+price:457+OR+price:458+OR+price:459+OR+price:460+OR+price:461+OR+price:462+OR+price:463+OR+price:464+OR+price:465+OR+price:466+OR+price:467+OR+price:468+OR+price:469+OR+price:470+OR+price:471+OR+price:472+OR+price:473+OR+price:474+OR+price:475+OR+price:476+OR+price:477+OR+price:478+OR+price:479+OR+price:480+OR+price:481+OR+price:482+OR+price:483+OR+price:484+OR+price:485+OR+price:486+OR+price:487+OR+price:488+OR+price:489+OR+price:490+OR+price:491+OR+price:492+OR+price:493+OR+price:494+OR+price:495+OR+price:496+OR+price:497+OR+price:498+OR+price:499+OR+price:500+OR+price:501+OR+price:502+OR+price:503+OR+price:504+OR+price:505+OR+price:506+OR+price:507+OR+price:508+OR+price:509+OR+price:510+OR+price:511+OR+price:512+OR+price:513+OR+price:514+OR+price:515+OR+price:516+OR+price:517+OR+price:518+OR+price:519+OR+price:520+OR+price:521+OR+price:522+OR+price:523+OR+price:524+OR+price:525+OR+price:526+OR+price:527+OR+price:528+OR+price:529+OR+price:530+OR+price:531+OR+price:532+OR+price:533+OR+price:534+OR+price:535+OR+price:536+OR+price:537+OR+price:538+OR+price:539+OR+price:540+OR+price:541+OR+price:542+OR+price:543+OR+price:544+OR+price:545+OR+price:546+OR+price:547+OR+price:548+OR+price:549+OR+price:550+OR+price:551+OR+price:552+OR+price:553+OR+price:554+OR+price:555+OR+price:556+OR+price:557+OR+price:558+OR+price:559+OR+price:560+OR+price:561+OR+price:562+OR+price:563+OR+price:564+OR+price:565+OR+price:566+OR+price:567+OR+price:568+OR+price:569+OR+price:570+OR+price:571+OR+price:572+OR+price:573+OR+price:574+OR+price:575+OR+price:576+OR+price:577+OR+price:578+OR+price:579+OR+price:580+OR+price:581+OR+price:582+OR+price:583+OR+price:584+OR+price:585+OR+price:586+OR+price:587+OR+price:588+OR+price:589+OR+price:590+OR+price:591+OR+price:592+OR+price:593+OR+price:594+OR+price:595+OR+price:596+OR+price:597+OR+price:598+OR+price:599+OR+price:600+OR+price:601+OR+price:602+OR+price:603+OR+price:604+OR+price:605+OR+price:606+OR+price:607+OR+price:608+OR+price:609+OR+price:610+OR+price:611+OR+price:612+OR+price:613+OR+price:614+OR+price:615+OR+price:616+OR+price:617+OR+price:618+OR+price:619+OR+price:620+OR+price:621+OR+price:622+OR+price:623+OR+price:624+OR+price:625+OR+price:626+OR+price:627+OR+price:628+OR+price:629+OR+price:630+OR+price:631+OR+price:632+OR+price:633+OR+price:634+OR+price:635+OR+price:636+OR+price:637+OR+price:638+OR+price:639+OR+price:640+OR+price:641+OR+price:642+OR+price:643+OR+price:644+OR+price:645+OR+price:646+OR+price:647+OR+price:648+OR+price:649+OR+price:650+OR+price:651+OR+price:652+OR+price:653+OR+price:654+OR+price:655+OR+price:656+OR+price:657+OR+price:658+OR+price:659+OR+price:660+OR+price:661+OR+price:662+OR+price:663+OR+price:664+OR+price:665+OR+price:666+OR+price:667+OR+price:668+OR+price:669+OR+price:670+OR+price:671+OR+price:672+OR+price:673+OR+price:674+OR+price:675+OR+price:676+OR+price:677+OR+price:678+OR+price:679+OR+price:680+OR+price:681+OR+price:682+OR+price:683+OR+price:684+OR+price:685+OR+price:686+OR+price:687+OR+price:688+OR+price:689+OR+price:690+OR+price:691+OR+price:692+OR+price:693+OR+price:694+OR+price:695+OR+price:696+OR+price:697+OR+price:698+OR+price:699+OR+price:700+OR+price:701+OR+price:702+OR+price:703+OR+price:704+OR+price:705+OR+price:706+OR+price:707+OR+price:708+OR+price:709+OR+price:710+OR+price:711+OR+price:712+OR+price:713+OR+price:714+OR+price:715+OR+price:716+OR+price:717+OR+price:718+OR+price:719+OR+price:720+OR+price:721+OR+price:722+OR+price:723+OR+price:724+OR+price:725+OR+price:726+OR+price:727+OR+price:728+OR+price:729+OR+price:730+OR+price:731+OR+price:732+OR+price:733+OR+price:734+OR+price:735+OR+price:736+OR+price:737+OR+price:738+OR+price:739+OR+price:740+OR+price:741+OR+price:742+OR+price:743+OR+price:744+OR+price:745+OR+price:746+OR+price:747+OR+price:748+OR+price:749+OR+price:750+OR+price:751+OR+price:752+OR+price:753+OR+price:754+OR+price:755+OR+price:756+OR+price:757+OR+price:758+OR+price:759+OR+price:760+OR+price:761+OR+price:762+OR+price:763+OR+price:764+OR+price:765+OR+price:766+OR+price:767+OR+price:768+OR+price:769+OR+price:770+OR+price:771+OR+price:772+OR+price:773+OR+price:774+OR+price:775+OR+price:776+OR+price:777+OR+price:778+OR+price:779+OR+price:780+OR+price:781+OR+price:782+OR+price:783+OR+price:784+OR+price:785+OR+price:786+OR+price:787+OR+price:788+OR+price:789+OR+price:790+OR+price:791+OR+price:792+OR+price:793+OR+price:794+OR+price:795+OR+price:796+OR+price:797+OR+price:798+OR+price:799+OR+price:800+OR+price:801+OR+price:802+OR+price:803+OR+price:804+OR+price:805+OR+price:806+OR+price:807+OR+price:808+OR+price:809+OR+price:810+OR+price:811+OR+price:812+OR+price:813+OR+price:814+OR+price:815+OR+price:816+OR+price:817+OR+price:818+OR+price:819+OR+price:820+OR+price:821+OR+price:822+OR+price:823+OR+price:824+OR+price:825+OR+price:826+OR+price:827+OR+price:828+OR+price:829+OR+price:830+OR+price:831+OR+price:832+OR+price:833+OR+price:834+OR+price:835+OR+price:836+OR+price:837+OR+price:838+OR+price:839+OR+price:840+OR+price:841+OR+price:842+OR+price:843+OR+price:844+OR+price:845+OR+price:846+OR+price:847+OR+price:848+OR+price:849+OR+price:850+OR+price:851+OR+price:852+OR+price:853+OR+price:854+OR+price:855+OR+price:856+OR+price:857+OR+price:858+OR+price:859+OR+price:860+OR+price:861+OR+price:862+OR+price:863+OR+price:864+OR+price:865+OR+price:866+OR+price:867+OR+price:868+OR+price:869+OR+price:870+OR+price:871+OR+price:872+OR+price:873+OR+price:874+OR+price:875+OR+price:876+OR+price:877+OR+price:878+OR+price:879+OR+price:880+OR+price:881+OR+price:882+OR+price:883+OR+price:884+OR+price:885+OR+price:886+OR+price:887+OR+price:888+OR+price:889+OR+price:890+OR+price:891+OR+price:892+OR+price:893+OR+price:894+OR+price:895+OR+price:896+OR+price:897+OR+price:898+OR+price:899+OR+price:900+OR+price:901+OR+price:902+OR+price:903+OR+price:904+OR+price:905+OR+price:906+OR+price:907+OR+price:908+OR+price:909+OR+price:910+OR+price:911+OR+price:912+OR+price:913+OR+price:914+OR+price:915+OR+price:916+OR+price:917+OR+price:918+OR+price:919+OR+price:920+OR+price:921+OR+price:922+OR+price:923+OR+price:924+OR+price:925+OR+price:926+OR+price:927+OR+price:928+OR+price:929+OR+price:930+OR+price:931+OR+price:932+OR+price:933+OR+price:934+OR+price:935+OR+price:936+OR+price:937+OR+price:938+OR+price:939+OR+price:940+OR+price:941+OR+price:942+OR+price:943+OR+price:944+OR+price:945+OR+price:946+OR+price:947+OR+price:948+OR+price:949+OR+price:950+OR+price:951+OR+price:952+OR+price:953+OR+price:954+OR+price:955+OR+price:956+OR+price:957+OR+price:958+OR+price:959+OR+price:960+OR+price:961+OR+price:962+OR+price:963+OR+price:964+OR+price:965+OR+price:966+OR+price:967+OR+price:968+OR+price:969+OR+price:970+OR+price:971+OR+price:972+OR+price:973+OR+price:974+OR+price:975+OR+price:976+OR+price:977+OR+price:978+OR+price:979+OR+price:980+OR+price:981+OR+price:982+OR+price:983+OR+price:984+OR+price:985+OR+price:986+OR+price:987+OR+price:988+OR+price:989+OR+price:990+OR+price:991+OR+price:992+OR+price:993+OR+price:994+OR+price:995+OR+price:996+OR+price:997+OR+price:998+OR+price:999+OR+price:1000&rows=10&wt=json} status=400 QTime=6
-2019-01-08 14:07:39.868 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-01-08 14:07:39.868 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-01-08 14:07:39.883 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1834361038
-2019-01-08 14:07:39.883 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-01-08 14:07:39.883 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1dd6d4b7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@63d0902c
-2019-01-08 14:07:39.914 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-01-08 14:07:39.914 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3401a114: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@2369c4e8
-2019-01-08 14:07:39.914 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-01-08 14:07:39.914 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5066d65f: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@6b3f40cf
-2019-01-08 14:07:39.914 INFO  (coreCloseExecutor-16-thread-1) [   x:core_blog] o.a.s.c.SolrCore [core_blog]  CLOSING SolrCore org.apache.solr.core.SolrCore@326156d7
-2019-01-08 14:07:39.914 INFO  (coreCloseExecutor-16-thread-1) [   x:core_blog] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.core_blog, tag=326156d7
-2019-01-08 14:07:39.914 INFO  (coreCloseExecutor-16-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@40e2dad6: rootName = null, domain = solr.core.core_blog, service url = null, agent id = null] for registry solr.core.core_blog / com.codahale.metrics.MetricRegistry@134be2df
-2019-01-08 14:07:40.008 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4e50c791{/solr,null,UNAVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
+2019-01-10 10:09:26.051 INFO  (main) [   ] o.e.j.u.log Logging initialized @891ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-01-10 10:09:26.198 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_191-b12
+2019-01-10 10:09:26.222 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/saidb/Documents/SolrSearchEngine/server/contexts/] at interval 0
+2019-01-10 10:09:26.657 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-01-10 10:09:26.665 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-01-10 10:09:26.666 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-01-10 10:09:26.667 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-01-10 10:09:26.711 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-01-10 10:09:26.734 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-01-10 10:09:26.737 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.5.0
+2019-01-10 10:09:26.738 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-01-10 10:09:26.738 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\saidb\Documents\SolrSearchEngine
+2019-01-10 10:09:26.738 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-01-10T10:09:26.738Z
+2019-01-10 10:09:26.758 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\saidb\Documents\SolrSearchEngine\server\solr
+2019-01-10 10:09:26.763 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\saidb\Documents\SolrSearchEngine\server\solr\solr.xml
+2019-01-10 10:09:26.808 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21, but no JMX reporters were configured - adding default JMX reporter.
+2019-01-10 10:09:32.144 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-01-10 10:09:32.144 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-01-10 10:09:32.207 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 10:09:32.207 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 10:09:32.207 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 10:09:32.238 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath C:\Users\saidb\Documents\SolrSearchEngine\server\solr
+2019-01-10 10:09:32.238 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [core_blog]
+2019-01-10 10:09:32.285 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrResourceLoader [core_blog] Added 59 libs to classloader, from paths: [/C:/Users/saidb/Documents/SolrSearchEngine/contrib/clustering/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/dataimporthandler/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/extraction/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/langid/lib, /C:/Users/saidb/Documents/SolrSearchEngine/contrib/velocity/lib, /C:/Users/saidb/Documents/SolrSearchEngine/dist]
+2019-01-10 10:09:32.457 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.5.0
+2019-01-10 10:09:32.566 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema [core_blog] Schema name=default-config
+2019-01-10 10:09:32.597 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4e50c791{/solr,file:///C:/Users/saidb/Documents/SolrSearchEngine/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
+2019-01-10 10:09:32.613 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-01-10 10:09:32.613 INFO  (main) [   ] o.e.j.s.Server Started @7462ms
+2019-01-10 10:09:32.925 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-01-10 10:09:32.957 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.CoreContainer Creating SolrCore 'core_blog' using configuration from instancedir C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog, trusted=true
+2019-01-10 10:09:32.972 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.core_blog' (registry 'solr.core.core_blog') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@71248c21
+2019-01-10 10:09:32.988 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.c.SolrCore [[core_blog] ] Opening new SolrCore at [C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog], dataDir=[C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\data\]
+2019-01-10 10:09:33.035 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-01-10 10:09:33.597 INFO  (qtp1571967156-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=31
+2019-01-10 10:09:37.907 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-01-10 10:09:37.907 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-01-10 10:09:37.923 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-01-10 10:09:37.923 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-01-10 10:09:38.011 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.SolrIndexSearcher Opening [Searcher@5e515ee0[core_blog] main]
+2019-01-10 10:09:38.019 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\saidb\Documents\SolrSearchEngine\server\solr\core_blog\conf
+2019-01-10 10:09:38.033 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-01-10 10:09:38.038 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-01-10 10:09:38.044 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2019-01-10 10:09:38.046 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=prenom,field1=nom,field2=commentaire,suggestAnalyzerFieldType=text_general,buildOnStartup=false}
+2019-01-10 10:09:38.059 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=prenom,field1=nom,field2=commentaire,suggestAnalyzerFieldType=text_general,buildOnStartup=false}
+2019-01-10 10:09:38.062 INFO  (coreLoadExecutor-9-thread-1) [   x:core_blog] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-01-10 10:09:38.066 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5e515ee0[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
+2019-01-10 10:09:38.066 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-01-10 10:09:38.067 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-01-10 10:09:38.071 INFO  (searcherExecutor-10-thread-1-processing-x:core_blog) [   x:core_blog] o.a.s.c.SolrCore [core_blog] Registered new searcher Searcher@5e515ee0[core_blog] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.5.0):C14)))}
+2019-01-10 10:09:38.080 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /suggest,class = solr.SearchHandler,attributes = {startup=lazy, name=/suggest, class=solr.SearchHandler},args = {defaults={suggest=true,suggest.count=10},components=[suggest]}} 
+2019-01-10 10:09:38.083 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=Seri
+2019-01-10 10:09:38.083 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 10:09:38.218 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=Seri
+2019-01-10 10:09:38.224 INFO  (qtp1571967156-18) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=Seri&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=2945
+2019-01-10 10:10:11.651 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=s
+2019-01-10 10:10:11.651 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 10:10:11.661 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=s
+2019-01-10 10:10:11.663 INFO  (qtp1571967156-16) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=s&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=12
+2019-01-10 10:10:27.098 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent prepare with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=h
+2019-01-10 10:10:27.099 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2019-01-10 10:10:27.112 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.h.c.SuggestComponent SuggestComponent process with : suggest.count=10&suggest=true&suggest.dictionary=mySuggester&suggest.build=true&suggest.q=h
+2019-01-10 10:10:27.112 INFO  (qtp1571967156-23) [   x:core_blog] o.a.s.c.S.Request [core_blog]  webapp=/solr path=/suggest params={suggest.build=true&suggest.q=h&suggest=true&suggest.dictionary=mySuggester} status=0 QTime=13
+2019-01-10 10:12:18.683 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1c7fd41f{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-01-10 10:12:18.683 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-01-10 10:12:18.683 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1834361038
+2019-01-10 10:12:18.683 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-01-10 10:12:18.683 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1dd6d4b7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@3d0bc87b
+2019-01-10 10:12:18.698 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-01-10 10:12:18.698 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3401a114: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@4f9dbdaf
+2019-01-10 10:12:18.698 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-01-10 10:12:18.698 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5066d65f: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@179a1fb6
+2019-01-10 10:12:18.698 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.c.SolrCore [core_blog]  CLOSING SolrCore org.apache.solr.core.SolrCore@4fc987c0
+2019-01-10 10:12:18.698 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.core_blog, tag=4fc987c0
+2019-01-10 10:12:18.698 INFO  (coreCloseExecutor-15-thread-1) [   x:core_blog] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@48199c8: rootName = null, domain = solr.core.core_blog, service url = null, agent id = null] for registry solr.core.core_blog / com.codahale.metrics.MetricRegistry@73e66513
+2019-01-10 10:12:18.729 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4e50c791{/solr,null,UNAVAILABLE}{C:\Users\saidb\Documents\SolrSearchEngine\server/solr-webapp/webapp}
